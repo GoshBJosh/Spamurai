@@ -3,6 +3,7 @@
     package="org.spamurai.spamurai">
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application
         android:allowBackup="true"
@@ -26,6 +27,13 @@
         <receiver android:name=".PhoneStateReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        // Check against contact list
+        <receiver android:name=".CheckContacts">
+            <intent-filter android:priority="999">
+                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
         </receiver>
 
