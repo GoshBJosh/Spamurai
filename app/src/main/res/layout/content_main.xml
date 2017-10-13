@@ -8,4 +8,12 @@
     tools:context="org.spamurai.spamurai.MainActivity"
     tools:showIn="@layout/activity_main">
 
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="67dp" />
 </android.support.constraint.ConstraintLayout>
