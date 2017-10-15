@@ -1,7 +1,7 @@
 # Spamurai_Android
 Manage spam calls on Android phones
 
-The goal of the Spamurai Android app is to give users different options in handling potential spam calls
+The goal of the Spamurai™ Android app is to give users different options in handling potential spam calls
 
 **Where We Are**
 - User has option to turn the phone ringer off if an incoming number is not in their contacts.
