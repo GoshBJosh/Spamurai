@@ -1,4 +1,4 @@
-# Spamurai_Android
+# Spamurai™ for Android
 Manage spam calls on Android phones
 
 The goal of the Spamurai™ Android app is to give users different options in handling potential spam calls
