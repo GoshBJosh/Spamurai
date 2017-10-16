@@ -27,7 +27,7 @@ public class PhoneStateReceiver extends BroadcastReceiver {
 
 
                 //Experimenting with retrieving contacts
-                String numberAsString = incomingNumber.toString();
+                String incomingAsString = incomingNumber.toString();
 
                 ContentResolver resolver = context.getContentResolver();
                 Cursor cursor = resolver.query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
@@ -42,10 +42,12 @@ public class PhoneStateReceiver extends BroadcastReceiver {
                     while (phoneCursor.moveToNext()){
                         String phoneNumber = phoneCursor.getString(phoneCursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
 
-                        if(numberAsString == phoneNumber) {
+                        String contactAsString = phoneNumber.replaceAll("()- ", "");
+
+                        if(incomingAsString == contactAsString) {
                             Toast.makeText(context, "Number matches", Toast.LENGTH_SHORT).show();
                         }
-                        if(numberAsString != phoneNumber) {
+                        if(incomingAsString != contactAsString) {
                             Toast.makeText(context, "Number DOES NOT match", Toast.LENGTH_SHORT).show();
 
                             AudioManager am;
