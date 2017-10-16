@@ -5,6 +5,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.media.AudioManager;
 import android.provider.ContactsContract;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -22,7 +23,6 @@ public class PhoneStateReceiver extends BroadcastReceiver {
             if(state.equals(TelephonyManager.EXTRA_STATE_RINGING)){
                 Toast.makeText(context,"Incoming Call State",Toast.LENGTH_SHORT).show();
                 Toast.makeText(context,"Ringing State Number is -"+incomingNumber,Toast.LENGTH_SHORT).show();
-
 
 
 
@@ -45,21 +45,16 @@ public class PhoneStateReceiver extends BroadcastReceiver {
                         }
                         if(incomingNumber != phoneNumber) {
                             Toast.makeText(context, "Number DOES NOT match", Toast.LENGTH_SHORT).show();
+
+                            AudioManager am;
+                            am= (AudioManager) context.getBaseContext().getSystemService(Context.AUDIO_SERVICE);
+                            am.setRingerMode(AudioManager.RINGER_MODE_SILENT);
+
                         }
 
 
                     }
                 }
-
-
-
-
-            }
-            if ((state.equals(TelephonyManager.EXTRA_STATE_OFFHOOK))){
-                Toast.makeText(context,"Call Received State",Toast.LENGTH_SHORT).show();
-            }
-            if (state.equals(TelephonyManager.EXTRA_STATE_IDLE)){
-                Toast.makeText(context,"Call Idle State",Toast.LENGTH_SHORT).show();
             }
         }
         catch (Exception e){
