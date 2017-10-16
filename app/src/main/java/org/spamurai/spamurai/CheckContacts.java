@@ -1,15 +1,15 @@
 package org.spamurai.spamurai;
 
 
-        import java.lang.reflect.Method;
-        import android.content.BroadcastReceiver;
-        import android.content.ContentResolver;
-        import android.content.Context;
-        import android.content.Intent;
-        import android.database.Cursor;
-        import android.media.AudioManager;
-        import android.provider.ContactsContract;
-        import android.telephony.TelephonyManager;
+import java.lang.reflect.Method;
+import android.content.BroadcastReceiver;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.Intent;
+import android.database.Cursor;
+import android.media.AudioManager;
+import android.provider.ContactsContract;
+import android.telephony.TelephonyManager;
 
 public class CheckContacts extends BroadcastReceiver{
     String incomingNumber="";

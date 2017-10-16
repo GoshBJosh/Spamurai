@@ -22,8 +22,12 @@ public class PhoneStateReceiver extends BroadcastReceiver {
             if(state.equals(TelephonyManager.EXTRA_STATE_RINGING)){
                 Toast.makeText(context,"Incoming Call State",Toast.LENGTH_SHORT).show();
                 Toast.makeText(context,"Ringing State Number is -"+incomingNumber,Toast.LENGTH_SHORT).show();
-//Experimenting with retrieving contacts
-                ContentResolver resolver = Context.getContentResolver();
+
+
+
+
+                //Experimenting with retrieving contacts
+                ContentResolver resolver = context.getContentResolver();
                 Cursor cursor = resolver.query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
 
                 while (cursor.moveToNext()){
@@ -35,8 +39,21 @@ public class PhoneStateReceiver extends BroadcastReceiver {
 
                     while (phoneCursor.moveToNext()){
                         String phoneNumber = phoneCursor.getString(phoneCursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+
+                        if(incomingNumber == phoneNumber) {
+                            Toast.makeText(context, "Number matches", Toast.LENGTH_SHORT).show();
+                        }
+                        if(incomingNumber != phoneNumber) {
+                            Toast.makeText(context, "Number DOES NOT match", Toast.LENGTH_SHORT).show();
+                        }
+
+
                     }
                 }
+
+
+
+
             }
             if ((state.equals(TelephonyManager.EXTRA_STATE_OFFHOOK))){
                 Toast.makeText(context,"Call Received State",Toast.LENGTH_SHORT).show();
