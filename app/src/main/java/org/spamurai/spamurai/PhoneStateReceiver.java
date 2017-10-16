@@ -25,7 +25,6 @@ public class PhoneStateReceiver extends BroadcastReceiver {
 
 
 
-
                 //Experimenting with retrieving contacts
                 ContentResolver resolver = context.getContentResolver();
                 Cursor cursor = resolver.query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
