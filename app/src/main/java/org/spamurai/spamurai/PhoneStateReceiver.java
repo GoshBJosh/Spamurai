@@ -42,8 +42,8 @@ public class PhoneStateReceiver extends BroadcastReceiver {
                     while (phoneCursor.moveToNext()){
                         String phoneNumber = phoneCursor.getString(phoneCursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
                         String reduceOne = phoneNumber.replace("\\s+", "");
-                        String reduceTwo = phoneNumber.replace("[()]", "");
-                        String contactAsString = phoneNumber.replaceAll("-", "");
+                        String reduceTwo = reduceOne.replace("[()]", "");
+                        String contactAsString = reduceTwo.replace("-", "");
 
                         if(incomingAsString == contactAsString) {
                             Toast.makeText(context, "Number matches", Toast.LENGTH_SHORT).show();
