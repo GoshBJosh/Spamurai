@@ -4,16 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="org.spamurai.spamurai.MainActivity"
     tools:showIn="@layout/activity_main">
 
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/protectionSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="67dp" />
+        android:text="@string/switch_protection"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+
 </android.support.constraint.ConstraintLayout>
