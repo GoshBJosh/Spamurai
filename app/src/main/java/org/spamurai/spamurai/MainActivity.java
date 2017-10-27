@@ -1,5 +1,7 @@
 package org.spamurai.spamurai;
 
+import android.content.ComponentName;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -22,10 +24,12 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                if (buttonView.isChecked()){
-                   Toast.makeText(getApplicationContext(), "SWITCH IS ON", Toast.LENGTH_SHORT).show();
+                   ComponentName component = new ComponentName(getApplicationContext(), PhoneStateReceiver.class)
+                   getApplicationContext().getPackageManager().setComponentEnabledSetting(component, PackageManager. COMPONENT_ENABLED_STATE_ENABLED , PackageManager.DONT_KILL_APP);
                }
                else{
-                   Toast.makeText(getApplicationContext(), "SWITCH IS OFF", Toast.LENGTH_SHORT).show();
+                   ComponentName component = new ComponentName(getApplicationContext(), PhoneStateReceiver.class)
+                   getApplicationContext().getPackageManager().setComponentEnabledSetting(component, PackageManager. COMPONENT_ENABLED_STATE_DISABLED , PackageManager.DONT_KILL_APP);
                }
            }
        });
