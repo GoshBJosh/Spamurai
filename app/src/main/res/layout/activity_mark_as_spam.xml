@@ -18,42 +18,43 @@
     <RadioGroup
         android:id="@+id/radio_markspamgroup"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-
-        <RadioButton
-            android:id="@+id/radio_markspam"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="@string/radio_markspam"
-            android:button="@null"
-            android:drawableTop="@android:drawable/btn_radio"
-            android:gravity="center"
-            tools:layout_editor_absoluteX="58dp"
-            tools:layout_editor_absoluteY="257dp" />
-
-        <RadioButton
-            android:id="@+id/radio_markunknown"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:checked="true"
-            android:text="@string/radio_markunknown"
-            android:button="@null"
-            android:drawableTop="@android:drawable/btn_radio"
-            android:gravity="center"
-            tools:layout_editor_absoluteX="164dp"
-            tools:layout_editor_absoluteY="257dp" />
-
-        <RadioButton
-            android:id="@+id/radio_marknotspam"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="@string/radio_marknotspam"
-            android:button="@null"
-            android:drawableTop="@android:drawable/btn_radio"
-            android:gravity="center"
-            tools:layout_editor_absoluteX="280dp"
-            tools:layout_editor_absoluteY="257dp" />
+        android:layout_height="wrap_content"
+        android:orientation='horizontal'>
 
     </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/radio_marknotspam"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:button="@null"
+        android:drawableTop="@android:drawable/btn_radio"
+        android:gravity="center"
+        android:text="@string/radio_marknotspam"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <RadioButton
+        android:id="@+id/radio_markunknown"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:button="@null"
+        android:checked="true"
+        android:drawableTop="@android:drawable/btn_radio"
+        android:gravity="center"
+        android:text="@string/radio_markunknown"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <RadioButton
+        android:id="@+id/radio_markspam"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:button="@null"
+        android:drawableTop="@android:drawable/btn_radio"
+        android:gravity="center"
+        android:text="@string/radio_markspam"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="260dp" />
 
 </android.support.constraint.ConstraintLayout>
