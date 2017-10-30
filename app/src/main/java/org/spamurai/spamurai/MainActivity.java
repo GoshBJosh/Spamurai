@@ -1,6 +1,7 @@
 package org.spamurai.spamurai;
 
 import android.content.ComponentName;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
-import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        Button SpamInAction = (Button)findViewById(R.id.SpamInActionButton);
-//        SpamInAction.setOnClickListener();
+
        // PROTECTION SWITCH ON/OFF
        Switch protectionSwitch = (Switch) findViewById(R.id.protectionSwitch);
 
@@ -36,6 +35,20 @@ public class MainActivity extends AppCompatActivity {
                }
            }
        });
+
+
+        // CONNECT 'CALLREVIEW' ACTIVITY
+        final Button callReviewButton = (Button)findViewById(R.id.callReviewButton);
+
+        callReviewButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent goToCallReview = new Intent(MainActivity.this, CallReview.class);
+                MainActivity.this.startActivity(goToCallReview);
+            }
+        });
+
+
+
 
     }
 
