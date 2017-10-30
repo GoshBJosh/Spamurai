@@ -8,12 +8,13 @@
 
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="0dp"
+        android:id="@+id/text_markspamnumber"
+        android:layout_width="58dp"
         android:layout_height="0dp"
         android:text="TextView"
         tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="205dp" />
+        tools:layout_editor_absoluteY="205dp"
+        app:layout_constraintHorizontal_bias="0.402"/>
 
     <RadioGroup
         android:id="@+id/radio_markspamgroup"
@@ -21,40 +22,58 @@
         android:layout_height="wrap_content"
         android:orientation='horizontal'>
 
+        <RadioButton
+            android:id="@+id/radio_marknotspam"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:button="@null"
+            android:drawableTop="@android:drawable/btn_radio"
+            android:gravity="center"
+            android:text="@string/radio_marknotspam"
+            tools:layout_editor_absoluteX="285dp"
+            tools:layout_editor_absoluteY="260dp"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_markspamnumber"/>
+
+        <RadioButton
+            android:id="@+id/radio_markunknown"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@android:drawable/btn_radio"
+            android:gravity="center"
+            android:text="@string/radio_markunknown"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="260dp"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_markspamnumber"/>
+
+        <RadioButton
+            android:id="@+id/radio_markspam"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:button="@null"
+            android:drawableTop="@android:drawable/btn_radio"
+            android:gravity="center"
+            android:text="@string/radio_markspam"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="260dp"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_markspamnumber"/>
+
     </RadioGroup>
 
-    <RadioButton
-        android:id="@+id/radio_marknotspam"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:button="@null"
-        android:drawableTop="@android:drawable/btn_radio"
-        android:gravity="center"
-        android:text="@string/radio_marknotspam"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="260dp" />
 
-    <RadioButton
-        android:id="@+id/radio_markunknown"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:button="@null"
-        android:checked="true"
-        android:drawableTop="@android:drawable/btn_radio"
-        android:gravity="center"
-        android:text="@string/radio_markunknown"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="260dp" />
 
-    <RadioButton
-        android:id="@+id/radio_markspam"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:button="@null"
-        android:drawableTop="@android:drawable/btn_radio"
-        android:gravity="center"
-        android:text="@string/radio_markspam"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="260dp" />
+
+
+
 
 </android.support.constraint.ConstraintLayout>
