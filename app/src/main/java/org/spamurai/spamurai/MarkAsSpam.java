@@ -41,8 +41,9 @@ public class MarkAsSpam extends AppCompatActivity {
                 // get selected radio button from radioGroup
                 int selectedId = markSpamGroup.getCheckedRadioButtonId();
                 // find the radiobutton by returned id
-                RadioButton thisMarkedOptions = (RadioButton) findViewById(selectedId);
-                Toast.makeText(getApplicationContext(), thisMarkedOptions.getText(), Toast.LENGTH_SHORT).show();
+                RadioButton thisMarkedOption = (RadioButton) findViewById(selectedId);
+
+                Toast.makeText(getApplicationContext(), thisMarkedOption.getText(), Toast.LENGTH_SHORT).show();
 
             }
 
