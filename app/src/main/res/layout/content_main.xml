@@ -23,7 +23,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/details_switch_protection"
         tools:layout_editor_absoluteX="135dp"
@@ -40,7 +40,13 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/protectionSwitch" />
 
-
+    <Button
+        android:id="@+id/markAsSpamButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Mark As Spam"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="409dp" />
 
 
 </android.support.constraint.ConstraintLayout>

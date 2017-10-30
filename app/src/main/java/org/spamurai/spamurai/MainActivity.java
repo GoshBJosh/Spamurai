@@ -48,6 +48,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        // CONNECT 'MarkAsSpam' ACTIVITY
+        final Button markAsSpamButton = (Button)findViewById(R.id.markAsSpamButton);
+
+        markAsSpamButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent goToMarkAsSpam = new Intent(MainActivity.this, MarkAsSpam.class);
+                MainActivity.this.startActivity(goToMarkAsSpam);
+            }
+        });
+
+
 
 
     }
