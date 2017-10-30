@@ -2,7 +2,15 @@
     <string name="app_name">Spamurai</string>
     <string name="action_settings">Settings</string>
 
+    // MainActivity
     <string name="switch_protection">Ringer ON</string>
     <string name='details_switch_protection'>Turn ringer on/off if phone doesn\'t recognize number</string>
     <string name='button_report'>Unleash the Fury</string>
+
+    // MarkAsSpam
+    <string name="radio_markspam">Spam</string>
+    <string name='radio_markunknown'>Unknown</string>
+    <string name='radio_marknotspam'>Not Spam</string>
+
+
 </resources>

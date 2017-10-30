@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
 
        // PROTECTION SWITCH ON/OFF
-       Switch protectionSwitch = (Switch) findViewById(R.id.protectionSwitch);
+       final Switch protectionSwitch = (Switch) findViewById(R.id.protectionSwitch);
 
        protectionSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
            @Override
