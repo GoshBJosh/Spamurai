@@ -28,12 +28,26 @@ public class CallReview extends AppCompatActivity {
 
         // PULL RECCENT CALLS INTO ARRAYLIST
 
-        Cursor c1 = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null);
-        for(int i=0;i<c1.getColumnCount();i++){
-            Log.i("Column name", ""+c1.getColumnName(i));
+        ArrayList<Integer> callArray = new ArrayList<Integer>();
+
+
+        Cursor c = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null);
+
+        for(int i=0;i<c.getColumnCount();i++){
+            callArray.add(Integer.parseInt(c.getString(0)));
+
         }
-        
+
+        Log.i("callArray", callArray.toString() );
+
+
+//        for (int i=0; i< callArray.size(); i++) {
 //
+//        }
+
+
+
+
 //        Uri allCalls = Uri.parse("content://call_log/calls");
 //        Cursor c = getContentResolver().query(contentUri, proj, null, null, null);
 //
