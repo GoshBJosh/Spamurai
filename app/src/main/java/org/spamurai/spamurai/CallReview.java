@@ -17,48 +17,121 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CallReview extends AppCompatActivity {
+
     private ListView lv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_call_review);
 
 
+        // PULL RECCENT CALLS INTO ARRAYLIST
 
-            lv = (ListView) findViewById(R.id.recentCallsList);
+        Cursor c1 = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null);
+        for(int i=0;i<c1.getColumnCount();i++){
+            Log.i("Column name", ""+c1.getColumnName(i));
+        }
+        
+//
+//        Uri allCalls = Uri.parse("content://call_log/calls");
+//        Cursor c = getContentResolver().query(contentUri, proj, null, null, null);
+//
+//        String num= c.getString(c.getColumnIndex(CallLog.Calls.NUMBER));// for  number
+//        String name= c.getString(c.getColumnIndex(CallLog.Calls.CACHED_NAME));// for name
+//        String duration = c.getString(c.getColumnIndex(CallLog.Calls.DURATION));// for duration
+//        int type = Integer.parseInt(c.getString(c.getColumnIndex(CallLog.Calls.TYPE)));// for call type, Incoming or out going.
+//
+//        Log.i();
 
-        ArrayList<JSONObject> contacts = new ArrayList<>();
-
-        public void addContacts(){
-
-            //to store name-number pair
-            JSONObject obj = new JSONObject();
-
-            try {
-                Uri allCalls = Uri.parse("content://call_log/calls");
-                Cursor c = managedQuery(allCalls, null, null, null, null);
-
-                while (c.moveToNext()) {
-                    String phoneNumber = c.getString(c.getColumnIndex(CallLog.Calls.NUMBER));
 
 
 
-                    Log.e("Contact list with name & numbers", " ");
-                }
-                c.close();
-            }
-            catch (Exception e){
-                e.printStackTrace();
-            }
-        }// This is the array adapter, it takes the context of the activity as a
-            // first parameter, the type of list view as a second parameter and your
-            // array as a third parameter.
-            ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
-                    this,
-                    android.R.layout.simple_list_item_1,
-                    JSONArray);
+//        private String getCallDetails() {
+//
+//            StringBuffer sb = new StringBuffer();
+//            Cursor managedCursor = managedQuery(CallLog.Calls.CONTENT_URI, null,
+//                    null, null, null);
+//            int number = managedCursor.getColumnIndex(CallLog.Calls.NUMBER);
+//            int type = managedCursor.getColumnIndex(CallLog.Calls.TYPE);
+//            int date = managedCursor.getColumnIndex(CallLog.Calls.DATE);
+//            int duration = managedCursor.getColumnIndex(CallLog.Calls.DURATION);
+//            sb.append("Call Details :");
+//            while (managedCursor.moveToNext()) {
+//                String phNumber = managedCursor.getString(number);
+//                String callType = managedCursor.getString(type);
+//                String callDate = managedCursor.getString(date);
+//                Date callDayTime = new Date(Long.valueOf(callDate));
+//                String callDuration = managedCursor.getString(duration);
+//                String dir = null;
+//                int dircode = Integer.parseInt(callType);
+//                switch (dircode) {
+//                    case CallLog.Calls.OUTGOING_TYPE:
+//                        dir = "OUTGOING";
+//                        break;
+//
+//                    case CallLog.Calls.INCOMING_TYPE:
+//                        dir = "INCOMING";
+//                        break;
+//
+//                    case CallLog.Calls.MISSED_TYPE:
+//                        dir = "MISSED";
+//                        break;
+//                }
+//                sb.append("\nPhone Number:--- " + phNumber + " \nCall Type:--- "
+//                        + dir + " \nCall Date:--- " + callDayTime
+//                        + " \nCall duration in sec :--- " + callDuration);
+//                sb.append("\n----------------------------------");
+//            }
+//            managedCursor.close();
+//            return sb.toString();
 
-            lv.setAdapter(arrayAdapter);
+
+
+       // POPULATE LIST
+
+//        lv = (ListView) findViewById(R.id.recentCallsList);
+//
+//        ArrayList<JSONObject> contacts = new ArrayList<>();
+//
+//        public void addContacts(){
+//
+//            //to store name-number pair
+//            JSONObject obj = new JSONObject();
+//
+//            try {
+//                Uri allCalls = Uri.parse("content://call_log/calls");
+//                Cursor c = managedQuery(allCalls, null, null, null, null);
+//
+//                while (c.moveToNext()) {
+//                    String phoneNumber = c.getString(c.getColumnIndex(CallLog.Calls.NUMBER));
+//
+//
+//
+//                    Log.e("Contact list with name & numbers", " ");
+//                }
+//                c.close();
+//            }
+//            catch (Exception e){
+//                e.printStackTrace();
+//            }
+//        }// This is the array adapter, it takes the context of the activity as a
+//            // first parameter, the type of list view as a second parameter and your
+//            // array as a third parameter.
+//            ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
+//                    this,
+//                    android.R.layout.simple_list_item_1,
+//                    JSONArray);
+//
+//            lv.setAdapter(arrayAdapter);
+
+
+
+
+
+
+
+
     }
 
 }

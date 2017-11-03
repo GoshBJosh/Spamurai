@@ -8,7 +8,7 @@
 
     <ListView
         android:id="@+id/recentCallsList"
-        android:layout_width="match_parent"
+        android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:headerDividersEnabled="false"
