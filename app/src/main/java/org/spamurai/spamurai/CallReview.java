@@ -28,23 +28,26 @@ public class CallReview extends AppCompatActivity {
 
         // PULL RECCENT CALLS INTO ARRAYLIST
 
-        ArrayList<Integer> callArray = new ArrayList<Integer>();
-
+        ArrayList<String> nameArray = new ArrayList<String>();
+        ArrayList<Integer> numberArray = new ArrayList<Integer>();
+        ArrayList<Integer> dateArray = new ArrayList<Integer>();
 
         Cursor cursor = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null);
         cursor.moveToFirst();
 
-        String date;
-        String number;
+        String name;
+        int date;
+        int number;
 
         do{
-            date = "";
-            number = "";
             try {
-                date = cursor.getString(cursor.getColumnIndex(CallLog.Calls.DATE));
-                number  = cursor.getString(cursor.getColumnIndex(CallLog.Calls.NUMBER));
+                name = cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_NAME));
+                date = cursor.getInt(cursor.getColumnIndex(CallLog.Calls.DATE));
+                number  = cursor.getInt(cursor.getColumnIndex(CallLog.Calls.NUMBER));
 
-                callArray.add(Integer.valueOf(number));
+                nameArray.add(String.valueOf(name));
+                numberArray.add(Integer.valueOf(number));
+                dateArray.add(Integer.valueOf(date));
             } catch (Exception e) {
             Log.e("My App", "Error in creation");
             }
@@ -52,7 +55,7 @@ public class CallReview extends AppCompatActivity {
 
 
 
-            Log.i("callArray", callArray.toString() );
+            Log.i("callArray", numberArray.toString() );
 
 //        for(int i=0;i<c.getColumnCount();i++){
 ////            callArray.add(Integer.parseInt(c.getString(0)));
