@@ -52,9 +52,9 @@ public class CallReview extends AppCompatActivity {
             }
         } while (cursor.moveToNext());
 
-        Log.i("nameArray", numberArray.toString() );
+        Log.i("nameArray", nameArray.toString() );
         Log.i("numberArray", numberArray.toString() );
-        Log.i("dateArray", numberArray.toString() );
+        Log.i("dateArray", dateArray.toString() );
 
 //        for(int i=0;i<c.getColumnCount();i++){
 ////            callArray.add(Integer.parseInt(c.getString(0)));
