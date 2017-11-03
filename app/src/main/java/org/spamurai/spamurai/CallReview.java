@@ -26,24 +26,21 @@ public class CallReview extends AppCompatActivity {
         setContentView(R.layout.activity_call_review);
 
 
-        // PULL RECCENT CALLS INTO ARRAYLIST
+        // PULL RECENT CALLS INTO ARRAYLIST
 
         ArrayList<String> nameArray = new ArrayList<String>();
         ArrayList<Integer> numberArray = new ArrayList<Integer>();
         ArrayList<Integer> dateArray = new ArrayList<Integer>();
 
-        Cursor cursor = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null);
+        Cursor cursor = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null, CallLog.Calls.DATE + " DESC");
         cursor.moveToFirst();
-
-        String name;
-        int date;
-        int number;
 
         do{
             try {
-                name = cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_NAME));
-                date = cursor.getInt(cursor.getColumnIndex(CallLog.Calls.DATE));
-                number  = cursor.getInt(cursor.getColumnIndex(CallLog.Calls.NUMBER));
+                String name = String.valueOf(cursor.getColumnIndex(CallLog.Calls.CACHED_NAME));
+                int type = cursor.getColumnIndex(CallLog.Calls.TYPE);
+                int date = cursor.getColumnIndex(CallLog.Calls.DATE);
+                int number  = cursor.getColumnIndex(CallLog.Calls.NUMBER);
 
                 nameArray.add(String.valueOf(name));
                 numberArray.add(Integer.valueOf(number));
@@ -70,17 +67,6 @@ public class CallReview extends AppCompatActivity {
 //        }
 
 
-
-
-//        Uri allCalls = Uri.parse("content://call_log/calls");
-//        Cursor c = getContentResolver().query(contentUri, proj, null, null, null);
-//
-//        String num= c.getString(c.getColumnIndex(CallLog.Calls.NUMBER));// for  number
-//        String name= c.getString(c.getColumnIndex(CallLog.Calls.CACHED_NAME));// for name
-//        String duration = c.getString(c.getColumnIndex(CallLog.Calls.DURATION));// for duration
-//        int type = Integer.parseInt(c.getString(c.getColumnIndex(CallLog.Calls.TYPE)));// for call type, Incoming or out going.
-//
-//        Log.i();
 
 
 
