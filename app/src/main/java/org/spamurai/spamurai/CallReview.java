@@ -31,14 +31,35 @@ public class CallReview extends AppCompatActivity {
         ArrayList<Integer> callArray = new ArrayList<Integer>();
 
 
-        Cursor c = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null);
+        Cursor cursor = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null);
+        cursor.moveToFirst();
 
-        for(int i=0;i<c.getColumnCount();i++){
-            callArray.add(Integer.parseInt(c.getString(0)));
+        String date;
+        String number;
 
-        }
+        do{
+            date = "";
+            number = "";
+            try {
+                date = cursor.getString(cursor.getColumnIndex(CallLog.Calls.DATE));
+                number  = cursor.getString(cursor.getColumnIndex(CallLog.Calls.NUMBER));
 
-        Log.i("callArray", callArray.toString() );
+                callArray.add(Integer.valueOf(number));
+            } catch (Exception e) {
+            Log.e("My App", "Error in creation");
+            }
+        } while (cursor.moveToNext());
+
+
+
+            Log.i("callArray", callArray.toString() );
+
+//        for(int i=0;i<c.getColumnCount();i++){
+////            callArray.add(Integer.parseInt(c.getString(0)));
+//
+//        }
+
+
 
 
 //        for (int i=0; i< callArray.size(); i++) {
