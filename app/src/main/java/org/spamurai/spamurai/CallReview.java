@@ -1,9 +1,12 @@
 package org.spamurai.spamurai;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.CallLog;
 import android.provider.ContactsContract;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -32,7 +35,17 @@ public class CallReview extends AppCompatActivity {
         ArrayList<String> numberArray = new ArrayList<String>();
         ArrayList<String> dateArray = new ArrayList<String>();
 
-        Cursor cursor = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null, CallLog.Calls.DATE + " DESC");
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CALL_LOG) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        Cursor cursor = getContentResolver().query(CallLog.Calls.CONTENT_URI, null, null, null, null);
         cursor.moveToFirst();
 
         do{
