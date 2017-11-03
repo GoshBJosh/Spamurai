@@ -27,7 +27,8 @@
         android:layout_height="wrap_content"
         android:text="@string/details_switch_protection"
         tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="133dp" />
+        tools:layout_editor_absoluteY="133dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/callReviewButton"
