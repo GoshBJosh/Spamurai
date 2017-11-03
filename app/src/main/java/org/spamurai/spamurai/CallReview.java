@@ -29,8 +29,8 @@ public class CallReview extends AppCompatActivity {
         // PULL RECENT CALLS INTO ARRAYLIST
 
         ArrayList<String> nameArray = new ArrayList<String>();
-        ArrayList<Integer> numberArray = new ArrayList<Integer>();
-        ArrayList<Integer> dateArray = new ArrayList<Integer>();
+        ArrayList<String> numberArray = new ArrayList<String>();
+        ArrayList<String> dateArray = new ArrayList<String>();
 
         Cursor cursor = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null, CallLog.Calls.DATE + " DESC");
         cursor.moveToFirst();
@@ -38,13 +38,15 @@ public class CallReview extends AppCompatActivity {
         do{
             try {
                 String name = String.valueOf(cursor.getColumnIndex(CallLog.Calls.CACHED_NAME));
-                int type = cursor.getColumnIndex(CallLog.Calls.TYPE);
                 int date = cursor.getColumnIndex(CallLog.Calls.DATE);
                 int number  = cursor.getColumnIndex(CallLog.Calls.NUMBER);
 
+                String thisDate = cursor.getString(date);
+                String thisNumber = cursor.getString(number);
+
                 nameArray.add(String.valueOf(name));
-                numberArray.add(Integer.valueOf(number));
-                dateArray.add(Integer.valueOf(date));
+                numberArray.add(String.valueOf(thisNumber));
+                dateArray.add(String.valueOf(thisDate));
             } catch (Exception e) {
             Log.e("My App", "Error in creation");
             }
