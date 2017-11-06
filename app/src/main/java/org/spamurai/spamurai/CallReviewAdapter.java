@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class CallReviewAdapter extends ArrayAdapter<CallReviewItem> {
 
     // declaring our ArrayList of items
-    private ArrayList<ClipData.Item> objects;
+    private ArrayList<CallReviewItem> objects;
 
     /* here we must override the constructor for ArrayAdapter
     * the only variable we care about now is ArrayList<Item> objects,
