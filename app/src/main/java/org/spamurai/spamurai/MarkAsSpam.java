@@ -1,6 +1,7 @@
 package org.spamurai.spamurai;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -49,8 +50,35 @@ public class MarkAsSpam extends AppCompatActivity {
 
         });
 
+        final Button checkRegistry = (Button)findViewById(R.id.checkRegistry);
 
+        checkRegistry.setOnClickListener(new View.OnClickListener() {
 
+            public void onClick(View v) {
+                String url = "https://www.donotcall.gov/confirm/conf.aspx";
 
-    }
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+
+            }
+
+        });
+
+        final Button reportNumber = (Button)findViewById(R.id.reportNumber);
+
+        reportNumber.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                String url = "https://complaints.donotcall.gov/complaint/complaintcheck.aspx";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+
+            }
+
+        });
+
+            }
 }
