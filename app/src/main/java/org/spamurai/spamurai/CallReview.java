@@ -20,7 +20,8 @@ import java.util.ArrayList;
 
 
 public class CallReview extends AppCompatActivity {
-
+    private ArrayList<CallReviewItem> callReviewItem = new ArrayList<CallReviewItem>();
+    private CallReviewAdapter callReviewAdapter;
     private ListView lv;
 
     @Override
@@ -49,9 +50,14 @@ public class CallReview extends AppCompatActivity {
                     String thisDate = cursor.getString(date);
                     String thisNumber = cursor.getString(number);
 
-                    nameArray.add(String.valueOf(name));
-                    numberArray.add(String.valueOf(thisNumber));
-                    dateArray.add(String.valueOf(thisDate));
+//                    nameArray.add(String.valueOf(name));
+//                    dateArray.add(String.valueOf(thisDate));
+//                    numberArray.add(String.valueOf(thisNumber));
+
+                    callReviewItem.add(new CallReviewItem(name, date, number));
+
+                    Log.i("thisthing: ", String.valueOf(callReviewItem.get(0)));
+
                 } catch (Exception e) {
                 Log.e("My App", "Error in creation");
                 }
@@ -71,13 +77,12 @@ public class CallReview extends AppCompatActivity {
         // This is the array adapter, it takes the context of the activity as a
         // first parameter, the type of list view as a second parameter and your
         // array as a third parameter.
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, numberArray);
 
-        lv.setAdapter(arrayAdapter);
-
-
-
-
+//        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, numberArray);
+//
+//        lv.setAdapter(arrayAdapter);
+        callReviewAdapter = new CallReviewAdapter(this, R.layout.call_item, callReviewItem);
+        lv.setAdapter(callReviewAdapter);
 
 
 

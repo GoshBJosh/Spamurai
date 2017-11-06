@@ -7,7 +7,6 @@ public class CallReviewItem {
     private int number;
 
     public CallReviewItem(){
-
     }
 
     public CallReviewItem(String name, int date, int number){
@@ -25,7 +24,7 @@ public class CallReviewItem {
     }
 
     // DATE
-    public String getDate() {
+    public int getDate() {
         return date;
     }
     public void setDate(int date) {
