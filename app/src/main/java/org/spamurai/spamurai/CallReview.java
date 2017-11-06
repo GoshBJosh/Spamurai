@@ -30,7 +30,7 @@ public class CallReview extends AppCompatActivity {
         ArrayList<String> dateArray = new ArrayList<String>();
 
 
-        try {
+//        try {
             Cursor cursor = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null);
             cursor.moveToFirst();
 
@@ -53,9 +53,9 @@ public class CallReview extends AppCompatActivity {
 
             cursor.close();
 
-        } catch (SecurityException e) {
-
-        }
+//        } catch (SecurityException e) {
+//
+//        }
 
         Log.i("nameArray", nameArray.toString() );
         Log.i("numberArray", numberArray.toString() );
