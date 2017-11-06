@@ -4,17 +4,14 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.provider.CallLog;
 import android.provider.ContactsContract;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
-import java.util.List;
 
 public class CallReview extends AppCompatActivity {
 
@@ -32,41 +29,50 @@ public class CallReview extends AppCompatActivity {
         ArrayList<String> numberArray = new ArrayList<String>();
         ArrayList<String> dateArray = new ArrayList<String>();
 
-        Cursor cursor = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null, CallLog.Calls.DATE + " DESC");
-        cursor.moveToFirst();
 
-        do{
-            try {
-                String name = String.valueOf(cursor.getColumnIndex(CallLog.Calls.CACHED_NAME));
-                int date = cursor.getColumnIndex(CallLog.Calls.DATE);
-                int number  = cursor.getColumnIndex(CallLog.Calls.NUMBER);
+        try {
+            Cursor cursor = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null);
+            cursor.moveToFirst();
 
-                String thisDate = cursor.getString(date);
-                String thisNumber = cursor.getString(number);
+            do{
+                try {
+                    String name = String.valueOf(cursor.getColumnIndex(CallLog.Calls.CACHED_NAME));
+                    int date = cursor.getColumnIndex(CallLog.Calls.DATE);
+                    int number  = cursor.getColumnIndex(CallLog.Calls.NUMBER);
 
-                nameArray.add(String.valueOf(name));
-                numberArray.add(String.valueOf(thisNumber));
-                dateArray.add(String.valueOf(thisDate));
-            } catch (Exception e) {
-            Log.e("My App", "Error in creation");
-            }
-        } while (cursor.moveToNext());
+                    String thisDate = cursor.getString(date);
+                    String thisNumber = cursor.getString(number);
+
+                    nameArray.add(String.valueOf(name));
+                    numberArray.add(String.valueOf(thisNumber));
+                    dateArray.add(String.valueOf(thisDate));
+                } catch (Exception e) {
+                Log.e("My App", "Error in creation");
+                }
+            } while (cursor.moveToNext());
+
+            cursor.close();
+
+        } catch (SecurityException e) {
+
+        }
 
         Log.i("nameArray", nameArray.toString() );
         Log.i("numberArray", numberArray.toString() );
         Log.i("dateArray", dateArray.toString() );
 
-//        for(int i=0;i<c.getColumnCount();i++){
-////            callArray.add(Integer.parseInt(c.getString(0)));
-//
-//        }
 
 
+        // POPULATE XML LIST
 
+        lv = (ListView) findViewById(R.id.recentCallsList);
 
-//        for (int i=0; i< callArray.size(); i++) {
-//
-//        }
+        // This is the array adapter, it takes the context of the activity as a
+        // first parameter, the type of list view as a second parameter and your
+        // array as a third parameter.
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, numberArray);
+
+        lv.setAdapter(arrayAdapter);
 
 
 
@@ -114,42 +120,6 @@ public class CallReview extends AppCompatActivity {
 
 
 
-       // POPULATE LIST
-
-//        lv = (ListView) findViewById(R.id.recentCallsList);
-//
-//        ArrayList<JSONObject> contacts = new ArrayList<>();
-//
-//        public void addContacts(){
-//
-//            //to store name-number pair
-//            JSONObject obj = new JSONObject();
-//
-//            try {
-//                Uri allCalls = Uri.parse("content://call_log/calls");
-//                Cursor c = managedQuery(allCalls, null, null, null, null);
-//
-//                while (c.moveToNext()) {
-//                    String phoneNumber = c.getString(c.getColumnIndex(CallLog.Calls.NUMBER));
-//
-//
-//
-//                    Log.e("Contact list with name & numbers", " ");
-//                }
-//                c.close();
-//            }
-//            catch (Exception e){
-//                e.printStackTrace();
-//            }
-//        }// This is the array adapter, it takes the context of the activity as a
-//            // first parameter, the type of list view as a second parameter and your
-//            // array as a third parameter.
-//            ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
-//                    this,
-//                    android.R.layout.simple_list_item_1,
-//                    JSONArray);
-//
-//            lv.setAdapter(arrayAdapter);
 
 
 
