@@ -86,15 +86,7 @@
         tools:ignore="MissingConstraints"
         app:layout_constraintTop_toBottomOf="@+id/text_markspamnumber"/>
 
-    <Button
-        android:id="@+id/reportNumber"
-        android:layout_width="137dp"
-        android:layout_height="48dp"
-        android:text="@string/report_number"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="345dp"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintTop_toBottomOf="@+id/checkRegistry"/>
+    
 
 
 </android.support.constraint.ConstraintLayout>
