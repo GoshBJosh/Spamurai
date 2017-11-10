@@ -86,7 +86,7 @@
         tools:ignore="MissingConstraints"
         app:layout_constraintTop_toBottomOf="@+id/text_markspamnumber"/>
 
-    
+
 
 
 </android.support.constraint.ConstraintLayout>

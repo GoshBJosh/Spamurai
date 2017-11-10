@@ -17,8 +17,6 @@ import android.widget.Toast;
 
 public class MarkAsSpam extends AppCompatActivity {
 
-
-
     private PopupWindow popWin;
     private void showPopupWin(String thisButton) {
         try {
