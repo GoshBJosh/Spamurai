@@ -16,14 +16,41 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MarkAsSpam extends AppCompatActivity {
+
+
+
     private PopupWindow popWin;
-    private void showPopupWin() {
+    private void showPopupWin(String thisButton) {
         try {
             LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View layout = inflater.inflate(R.layout.popwin, (ViewGroup) findViewById(R.id.popup));
 
             popWin = new PopupWindow(layout, 290, 360, true);
             popWin.showAtLocation(layout, Gravity.CENTER, 0, 0);
+
+            if(thisButton == "spam"){
+                final Button reportNumber = (Button)findViewById(R.id.reportNumber);
+                reportNumber.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        String url = "https://complaints.donotcall.gov/complaint/complaintcheck.aspx";
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                    }
+                });
+            }
+            if(thisButton == "notspam"){
+                final Button addContact = (Button)findViewById(R.id.reportNumber);
+                addContact.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        String url = "https://complaints.donotcall.gov/complaint/complaintcheck.aspx";
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                    }
+                });
+            }
+
             Button exit_popupWin = (Button) layout.findViewById(R.id.exit_popup);
             exit_popupWin.setOnClickListener(cancel_button);
         }
@@ -66,11 +93,11 @@ public class MarkAsSpam extends AppCompatActivity {
                 // checkedId is the RadioButton selected
                 if (checkedId == R.id.radio_marknotspam) {
                     Toast.makeText(getApplicationContext(), "Number DOES NOT match", Toast.LENGTH_SHORT).show();
-                    showPopupWin();
+                    showPopupWin("notspam");
                 }
                 if (checkedId == R.id.radio_markspam) {
                     Toast.makeText(getApplicationContext(), "Number DOES match", Toast.LENGTH_SHORT).show();
-
+                    showPopupWin("spam");
                 }
             }
         });
@@ -103,20 +130,6 @@ public class MarkAsSpam extends AppCompatActivity {
 
         });
 
-        final Button reportNumber = (Button)findViewById(R.id.reportNumber);
 
-        reportNumber.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                String url = "https://complaints.donotcall.gov/complaint/complaintcheck.aspx";
-
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-
-            }
-
-        });
-
-            }
+    }
 }

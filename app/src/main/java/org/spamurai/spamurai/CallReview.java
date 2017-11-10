@@ -59,8 +59,6 @@ public class CallReview extends AppCompatActivity {
                     Log.i("Date: ", String.valueOf(dateArray));
                     Log.i("Number: ", String.valueOf(numberArray));
 
-//josh
-
                     callReviewItem.add(new CallReviewItem(name, date, number));
 
                     Log.i("thisthing: ", String.valueOf(callReviewItem.get(0)));
