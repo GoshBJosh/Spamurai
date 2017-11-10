@@ -11,11 +11,12 @@
         android:id="@+id/text_markspamnumber"
         android:layout_width="58dp"
         android:layout_height="0dp"
-        android:text="TextView"
+        android:text="@string/textview"
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="205dp"
         app:layout_constraintHorizontal_bias="0.402"
-        app:layout_constraintTop_toBottomOf="@+id/radio_markspamgroup"/>
+        app:layout_constraintTop_toBottomOf="@+id/radio_markspamgroup"
+        tools:ignore="MissingConstraints" />
 
     <RadioGroup
         android:id="@+id/radio_markspamgroup"
@@ -79,8 +80,7 @@
         android:id="@+id/checkRegistry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check Registry"
-        tools:clickable="true"
+        android:text="@string/check_registry"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="258dp"
         tools:ignore="MissingConstraints"
@@ -90,8 +90,7 @@
         android:id="@+id/reportNumber"
         android:layout_width="137dp"
         android:layout_height="48dp"
-        android:text="Report Number"
-        tools:clickable="true"
+        android:text="@string/report_number"
         tools:layout_editor_absoluteX="139dp"
         tools:layout_editor_absoluteY="345dp"
         tools:ignore="MissingConstraints"

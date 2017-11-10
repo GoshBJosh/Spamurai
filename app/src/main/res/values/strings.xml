@@ -11,6 +11,9 @@
     <string name="radio_markspam">Spam</string>
     <string name='radio_markunknown'>Unknown</string>
     <string name='radio_marknotspam'>Not Spam</string>
+    <string name="report_number">Report Number</string>
+    <string name="check_registry">Check Registry</string>
+    <string name="textview">TextView</string>
 
 
 </resources>
