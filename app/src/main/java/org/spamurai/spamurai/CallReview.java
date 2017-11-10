@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class CallReview extends AppCompatActivity {
     private ArrayList<CallReviewItem> callReviewItem = new ArrayList<CallReviewItem>();
     private CallReviewAdapter callReviewAdapter;
-    private ListView lv;
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,22 +37,29 @@ public class CallReview extends AppCompatActivity {
         ArrayList<String> dateArray = new ArrayList<String>();
 
 
-//        try {
+        try {
             Cursor cursor = getContentResolver().query(CallLog.Calls.CONTENT_URI,null,null,null,null);
             cursor.moveToFirst();
 
             do{
                 try {
                     String name = String.valueOf(cursor.getColumnIndex(CallLog.Calls.CACHED_NAME));
-                    int date = cursor.getColumnIndex(CallLog.Calls.DATE);
-                    int number  = cursor.getColumnIndex(CallLog.Calls.NUMBER);
 
+                    int date = cursor.getColumnIndex(CallLog.Calls.DATE);
                     String thisDate = cursor.getString(date);
+
+                    int number  = cursor.getColumnIndex(CallLog.Calls.NUMBER);
                     String thisNumber = cursor.getString(number);
 
-//                    nameArray.add(String.valueOf(name));
-//                    dateArray.add(String.valueOf(thisDate));
-//                    numberArray.add(String.valueOf(thisNumber));
+                    nameArray.add(String.valueOf(name));
+                    dateArray.add(String.valueOf(thisDate));
+                    numberArray.add(String.valueOf(thisNumber));
+
+                    Log.i("Name: ", String.valueOf(nameArray));
+                    Log.i("Date: ", String.valueOf(dateArray));
+                    Log.i("Number: ", String.valueOf(numberArray));
+
+
 
                     callReviewItem.add(new CallReviewItem(name, date, number));
 
@@ -65,14 +72,14 @@ public class CallReview extends AppCompatActivity {
 
             cursor.close();
 
-//        } catch (SecurityException e) {
-//
-//        }
+        } catch (SecurityException e) {
+
+        }
 
 
         // POPULATE XML LIST
 
-        lv = (ListView) findViewById(R.id.recentCallsList);
+        listView = (ListView) findViewById(R.id.recentCallsList);
 
         // This is the array adapter, it takes the context of the activity as a
         // first parameter, the type of list view as a second parameter and your
@@ -80,9 +87,9 @@ public class CallReview extends AppCompatActivity {
 
 //        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, numberArray);
 //
-//        lv.setAdapter(arrayAdapter);
+//        listView.setAdapter(arrayAdapter);
         callReviewAdapter = new CallReviewAdapter(this, R.layout.call_item, callReviewItem);
-        lv.setAdapter(callReviewAdapter);
+        listView.setAdapter(callReviewAdapter);
 
 
 
