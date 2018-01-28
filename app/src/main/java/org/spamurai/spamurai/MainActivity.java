@@ -19,21 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
-
-        // CONNECT 'CALLREVIEW' ACTIVITY
-        final Button callReviewButton = (Button)findViewById(R.id.callReviewButton);
-
-        callReviewButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent goToCallReview = new Intent(MainActivity.this, CallReview.class);
-                MainActivity.this.startActivity(goToCallReview);
-            }
-        });
-
-
         // CONNECT 'MarkAsSpam' ACTIVITY
-        final Button markAsSpamButton = (Button)findViewById(R.id.markAsSpamButton);
+        final Button markAsSpamButton = (Button)findViewById(R.id.button_markCall);
 
         markAsSpamButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -44,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // CONNECT 'CALLREVIEW' ACTIVITY
-        final Button ringerOptionsButton = (Button)findViewById(R.id.ringerOptionsButton);
+        final Button ringerOptionsButton = (Button)findViewById(R.id.button_ringerOptions);
 
         ringerOptionsButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
