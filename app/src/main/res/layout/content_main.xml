@@ -7,51 +7,138 @@
     android:background="@color/colorPrimary"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="org.spamurai.spamurai.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp">
 
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_width="373dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018"
+        app:srcCompat="@drawable/title"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.482" />
 
-    <Switch
-        android:id="@+id/protectionSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/switch_protection"
+    <ImageView
+        android:id="@+id/characterImage"
+        android:layout_width="0dp"
+        android:layout_height="153dp"
+        app:srcCompat="@drawable/title_spammy"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/box_main"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="66dp"
+        android:layout_marginRight="66dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/box_main"
+        android:layout_width="334dp"
+        android:layout_height="202dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/box"
+
+        android:layout_marginTop="304dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        app:layout_constraintHorizontal_bias="0.464"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <Button
+        android:id="@+id/button_markCall"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:paddingBottom="5dp"
+        android:text="@string/mark_call"
         android:textColor="@color/colorAccent"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="133dp"
-        tools:ignore="MissingConstraints" />
+        android:background="@drawable/button"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="36dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/box_main"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="52dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_ringerOptions"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:paddingBottom="5dp"
+        android:text="@string/ringer_options"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/button"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="51dp"
+        app:layout_constraintBottom_toBottomOf="@+id/copyright"
+        android:layout_marginEnd="51dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="75dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="85dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_markCall"
+        android:layout_marginLeft="51dp"
+        android:layout_marginRight="51dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/details_switch_protection"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="133dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/callReviewButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        android:text="@string/button_report"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/copyright"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/copyright"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="36dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/protectionSwitch" />
-
-    <Button
-        android:id="@+id/markAsSpamButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Mark As Spam"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="409dp"
-        app:layout_constraintHorizontal_bias="0.602"
+        android:layout_marginTop="35dp"
+        app:layout_constraintTop_toBottomOf="@+id/box_main"
+        tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/callReviewButton"/>
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+
 
 
 </android.support.constraint.ConstraintLayout>

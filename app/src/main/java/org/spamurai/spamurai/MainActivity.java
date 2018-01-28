@@ -19,22 +19,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-       // PROTECTION SWITCH ON/OFF
-       final Switch protectionSwitch = (Switch) findViewById(R.id.protectionSwitch);
-
-       protectionSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-           @Override
-           public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-               if (buttonView.isChecked()){
-                   ComponentName component = new ComponentName(getApplicationContext(), PhoneStateReceiver.class);
-                   getApplicationContext().getPackageManager().setComponentEnabledSetting(component, PackageManager. COMPONENT_ENABLED_STATE_ENABLED , PackageManager.DONT_KILL_APP);
-               }
-               else{
-                   ComponentName component = new ComponentName(getApplicationContext(), PhoneStateReceiver.class);
-                   getApplicationContext().getPackageManager().setComponentEnabledSetting(component, PackageManager. COMPONENT_ENABLED_STATE_DISABLED , PackageManager.DONT_KILL_APP);
-               }
-           }
-       });
 
 
         // CONNECT 'CALLREVIEW' ACTIVITY
@@ -59,9 +43,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        // CONNECT 'CALLREVIEW' ACTIVITY
+        final Button ringerOptionsButton = (Button)findViewById(R.id.ringerOptionsButton);
+
+        ringerOptionsButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent goToringerOptions = new Intent(MainActivity.this, RingerOptions.class);
+                MainActivity.this.startActivity(goToringerOptions);
+            }
+        });
 
 
     }
-
-
 }

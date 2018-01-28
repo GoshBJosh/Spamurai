@@ -4,89 +4,251 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.spamurai.spamurai.MarkAsSpam">
+    tools:context="org.spamurai.spamurai.MarkAsSpam"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
 
+    <ImageView
+        android:id="@+id/h1_caller"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/h1_caller"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_char"
+        android:layout_width="411dp"
+        android:layout_height="287dp"
+        app:srcCompat="@drawable/char_unknown"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/text_datecalled"
+        app:layout_constraintRight_toRightOf="@+id/text_spam" />
+
+    <ImageView
+        android:id="@+id/box_notspam"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/box"
+        app:layout_constraintRight_toLeftOf="@+id/box_unknown"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/box_unknown"
+        android:layout_marginEnd="14dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/box_unknown"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="14dp" />
+
+    <ImageView
+        android:id="@+id/box_unknown"
+        android:layout_width="100dp"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/box"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/button_submit"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/box_spam"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/box"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/box_unknown"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/box_unknown"
+        app:layout_constraintLeft_toRightOf="@+id/box_unknown"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="16dp" />
 
     <TextView
-        android:id="@+id/text_markspamnumber"
-        android:layout_width="58dp"
-        android:layout_height="0dp"
-        android:text="@string/textview"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="205dp"
-        app:layout_constraintHorizontal_bias="0.402"
-        app:layout_constraintTop_toBottomOf="@+id/radio_markspamgroup"
-        tools:ignore="MissingConstraints" />
+        android:id="@+id/text_datecalled"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:text="@string/incoming_date"
+        android:gravity="center"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="34dp"
+        app:layout_constraintRight_toRightOf="@+id/box_unknown"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_phonenumber"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/img_char"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="34dp" />
+
+    <TextView
+        android:id="@+id/text_phonenumber"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:text="@string/incoming_number"
+        android:gravity="center"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/radio_markspamgroup"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintRight_toRightOf="@+id/box_spam"
+        android:layout_marginTop="22dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintLeft_toLeftOf="@+id/box_unknown"
+        app:layout_constraintTop_toTopOf="@+id/box_unknown"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="20dp" />
 
     <RadioGroup
         android:id="@+id/radio_markspamgroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation='horizontal'>
+        android:orientation='horizontal'
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="112dp"
+        app:layout_constraintLeft_toLeftOf="@+id/box_notspam">
 
-        <RadioButton
-            android:id="@+id/radio_marknotspam"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:button="@null"
-            android:drawableTop="@android:drawable/btn_radio"
-            android:gravity="center"
-            android:text="@string/radio_marknotspam"
-            tools:layout_editor_absoluteX="285dp"
-            tools:layout_editor_absoluteY="260dp"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_markspamnumber"/>
+       <RadioButton
+           android:id="@+id/radio_notspam"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:button="@null"
+           android:drawableTop="@android:drawable/btn_radio"
+           android:gravity="center"
+           tools:layout_editor_absoluteY="344dp"
+           tools:layout_editor_absoluteX="20dp" />
 
-        <RadioButton
-            android:id="@+id/radio_markunknown"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:button="@null"
-            android:checked="true"
-            android:drawableTop="@android:drawable/btn_radio"
-            android:gravity="center"
-            android:text="@string/radio_markunknown"
-            tools:layout_editor_absoluteX="164dp"
-            tools:layout_editor_absoluteY="260dp"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_markspamnumber"/>
+       <RadioButton
+           android:id="@+id/radio_unknown"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:paddingLeft="25dp"
+           android:button="@null"
+           android:checked="true"
+           android:drawableTop="@android:drawable/btn_radio"
+           android:gravity="center"
+           tools:layout_editor_absoluteX="130dp"
+           tools:layout_editor_absoluteY="344dp" />
 
-        <RadioButton
-            android:id="@+id/radio_markspam"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:button="@null"
-            android:drawableTop="@android:drawable/btn_radio"
-            android:gravity="center"
-            android:text="@string/radio_markspam"
-            tools:layout_editor_absoluteX="58dp"
-            tools:layout_editor_absoluteY="260dp"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_markspamnumber"/>
+       <RadioButton
+          android:id="@+id/radio_spam"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+           android:paddingLeft="60dp"
+          android:button="@null"
+          android:drawableTop="@android:drawable/btn_radio"
+          android:gravity="center"
+          tools:layout_editor_absoluteY="349dp"
+          tools:layout_editor_absoluteX="244dp" />
 
     </RadioGroup>
 
-    <android.support.constraint.Guideline
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text_notspam"
+        android:layout_width="180dp"
+        android:layout_height="32dp"
+        android:text="@string/radio_notspam"
+        android:textColor="@color/textColor"
+        android:gravity="center"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="71dp"
+        app:layout_constraintRight_toRightOf="@+id/box_unknown"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_unknown"
+        tools:layout_constraintBaseline_creator="1"
+        android:layout_marginRight="71dp" />
+
+    <TextView
+        android:id="@+id/text_unknown"
+        android:layout_width="180dp"
+        android:layout_height="32dp"
+        android:text="@string/radio_unknown"
+        android:textColor="@color/textColor"
+        android:gravity="center"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/button_submit"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="96dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="93dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_datecalled" />
+
+    <TextView
+        android:id="@+id/text_spam"
+        android:layout_width="180dp"
+        android:layout_height="32dp"
+        android:text="@string/radio_spam"
+        android:textColor="@color/textColor"
+        android:gravity="center"
+        android:layout_marginStart="78dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_unknown"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/box_unknown"
+        android:layout_marginLeft="78dp" />
 
     <Button
-        android:id="@+id/checkRegistry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/check_registry"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="258dp"
+        android:id="@+id/button_submit"
+        android:layout_width="184dp"
+        android:layout_height="60dp"
+        android:paddingBottom="5dp"
+        android:text="@string/submit"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/button"
         tools:ignore="MissingConstraints"
-        app:layout_constraintTop_toBottomOf="@+id/text_markspamnumber"/>
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/radio_markspamgroup"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
-
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/copyright"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_submit"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

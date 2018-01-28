@@ -3,4 +3,12 @@
     <color name="colorPrimary">#00A0C6</color>
     <color name="colorPrimaryDark">#047391</color>
     <color name="colorAccent">#3F3F3F</color>
+
+    <color name="textColor">#FFFFFF</color>
+    <color name="text_shadow">#7F000000</color>
+
+    <!-- Switch Colors -->
+    <color name="diable_track_gray">#42221f1f</color>
+    <color name="diable_thumb_gray">#1c000000</color>
+    <color name="enable_track_green">#46bdbf</color>
 </resources>

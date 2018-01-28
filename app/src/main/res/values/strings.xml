@@ -1,19 +1,30 @@
 <resources>
     <string name="app_name">Spamurai</string>
     <string name="action_settings">Settings</string>
+    <string name="copyright">© B\'Gosh Digital 2016-18, All Rights Reserved.</string>
 
     // MainActivity
-    <string name="switch_protection">Ringer ON</string>
-    <string name='details_switch_protection'>Turn ringer on/off if phone doesn\'t recognize number</string>
-    <string name='button_report'>Unleash the Fury</string>
+    <string name='mark_call'>Mark Call As Spam</string>
+    <string name='ringer_options'>Ringer Options</string>
+
+    // Ringer Options
+    <string name='h2_silent'>Silent Mode</string>
+    <string name="switch_on">ON</string>
+    <string name="switch_off">OFF</string>
+    <string name='details_onoff'>Silence the ringer if phone doesn\'t recognize the incoming number</string>
+    <string name='details_comingsoon'>New features coming soon</string>
+
 
     // MarkAsSpam
-    <string name="radio_markspam">Spam</string>
-    <string name='radio_markunknown'>Unknown</string>
-    <string name='radio_marknotspam'>Not Spam</string>
+    <string name="incoming_date">Date Unknown</string>
+    <string name="incoming_number">Number Unknown</string>
+    <string name="radio_spam">Spam</string>
+    <string name='radio_unknown'>Unknown</string>
+    <string name='radio_notspam'>Not Spam</string>
     <string name="report_number">Report Number</string>
-    <string name="check_registry">Check Registry</string>
+    <string name="submit">Submit</string>
     <string name="textview">TextView</string>
+    <string name="title_activity_level_up">activity_level_up</string>
 
 
 </resources>

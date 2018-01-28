@@ -27,18 +27,21 @@ public class MarkAsSpam extends AppCompatActivity {
             popWin.showAtLocation(layout, Gravity.CENTER, 0, 0);
 
             if(thisButton == "spam"){
-                final Button reportNumber = (Button)findViewById(R.id.reportNumber);
+
+                Button reportNumber = (Button)findViewById(R.id.reportNumber);
                 reportNumber.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        String url = "https://complaints.donotcall.gov/complaint/complaintcheck.aspx";
-                        Intent i = new Intent(Intent.ACTION_VIEW);
-                        i.setData(Uri.parse(url));
-                        startActivity(i);
-                    }
+//                    public void onClick(View v) {
+//                        String url = "https://complaints.donotcall.gov/complaint/complaintcheck.aspx";
+//                        Intent i = new Intent(Intent.ACTION_VIEW);
+//                        i.setData(Uri.parse(url));
+//                        startActivity(i);
+//                    }
                 });
+
             }
             if(thisButton == "notspam"){
-                final Button addContact = (Button)findViewById(R.id.reportNumber);
+
+                Button addContact = (Button)findViewById(R.id.addContact);
                 addContact.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
                         String url = "https://complaints.donotcall.gov/complaint/complaintcheck.aspx";
@@ -47,6 +50,7 @@ public class MarkAsSpam extends AppCompatActivity {
                         startActivity(i);
                     }
                 });
+
             }
 
             Button exit_popupWin = (Button) layout.findViewById(R.id.exit_popup);
