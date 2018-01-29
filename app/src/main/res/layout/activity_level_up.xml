@@ -1,33 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.spamurai.spamurai.activity_level_up">
+    tools:context="org.spamurai.spamurai.LevelUp"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+    <ImageView
+        android:id="@+id/h1_success"
+        android:layout_width="277dp"
+        android:layout_height="99dp"
+        app:srcCompat="@drawable/h1_success"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintVertical_bias="0.002" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_activity_level_up" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    <ImageView
+        android:id="@+id/success_spammy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@drawable/success_spammy"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintRight_toRightOf="@+id/h1_success"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toBottomOf="@+id/h1_success"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/h2_total"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="54dp" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <ImageView
+        android:id="@+id/box_total"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/box"
+        android:scaleType="fitXY"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/copyright"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/success_spammy"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp" />
+
+    <ImageView
+        android:id="@+id/textbox_total"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/box_text"
+        android:scaleType="fitXY"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button_home"
+        android:layout_marginStart="14dp"
+        app:layout_constraintRight_toRightOf="@+id/button_home"
+        android:layout_marginTop="15dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintTop_toTopOf="@+id/box_total"
+        app:layout_constraintLeft_toRightOf="@+id/h2_total"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@+id/h2_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/h2_reportedtotal"
+        android:textColor="#EFE4E4"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textbox_total"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp" />
+
+
+    <TextView
+        android:id="@+id/text_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_total"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="32dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textbox_total"
+        app:layout_constraintTop_toTopOf="@+id/textbox_total"
+        android:layout_marginLeft="33dp" />
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:paddingBottom="5dp"
+        android:text="@string/button_home"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/button"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/box_total"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:text="@string/copyright"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        tools:layout_editor_absoluteY="541dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp" />
+
+</android.support.constraint.ConstraintLayout>

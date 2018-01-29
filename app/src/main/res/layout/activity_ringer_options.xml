@@ -115,10 +115,6 @@
         android:textColor="#EFE4E4"
         android:textStyle="bold"
         android:textSize="25dp"
-        android:shadowColor="@color/text_shadow"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="2"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/box_silentText"
@@ -129,7 +125,7 @@
         android:layout_marginLeft="37dp" />
 
     <android.support.v7.widget.SwitchCompat
-        android:id="@+id/switchRingerOnOff"
+        android:id="@+id/switch_ringerOnOff"
         android:theme="@style/spamSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
