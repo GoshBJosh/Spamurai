@@ -2,6 +2,7 @@ package org.spamurai.spamurai;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,15 +29,16 @@ public class MarkAsSpam extends AppCompatActivity {
 
             if(thisButton == "spam"){
 
-                Button reportNumber = (Button)findViewById(R.id.reportNumber);
-                reportNumber.setOnClickListener(new View.OnClickListener() {
+//                Button reportNumber = (Button)findViewById(R.id.reportNumber);
+//                reportNumber.setOnClickListener(new View.OnClickListener() {
 //                    public void onClick(View v) {
 //                        String url = "https://complaints.donotcall.gov/complaint/complaintcheck.aspx";
 //                        Intent i = new Intent(Intent.ACTION_VIEW);
 //                        i.setData(Uri.parse(url));
 //                        startActivity(i);
 //                    }
-                });
+//                });
+
 
             }
             if(thisButton == "notspam"){
@@ -78,7 +80,6 @@ public class MarkAsSpam extends AppCompatActivity {
         String numberReview = intent.getStringExtra("key");
 
 
-        // NEED TO GET USER'S CHARACTER LEVEL TO DISPLAY THEIR AVATAR
 
 
 
@@ -93,13 +94,33 @@ public class MarkAsSpam extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // checkedId is the RadioButton selected
-                if (checkedId == R.id.radio_marknotspam) {
+                if (checkedId == R.id.radio_notspam) {
                     Toast.makeText(getApplicationContext(), "Number DOES NOT match", Toast.LENGTH_SHORT).show();
                     showPopupWin("notspam");
                 }
-                if (checkedId == R.id.radio_markspam) {
+                if (checkedId == R.id.radio_spam) {
                     Toast.makeText(getApplicationContext(), "Number DOES match", Toast.LENGTH_SHORT).show();
                     showPopupWin("spam");
+
+                    // ADDS 1 TO TOTAL NUMBER OF REPORTED CALLS IN SHARED PREFERENCES
+//                    public void incrementTotal(View view) {
+//                        SharedPreferences sharedPref = getSharedPreferences("reportTotal", Context.MODE_PRIVATE);
+//
+//                        SharedPreferences.Editor editor = sharedPref.edit();
+//                        editor.putInt("reportTotal", 0);
+//                        editor.apply();
+//                    }
+
+                    int count = 0;
+                    SharedPreferences.Editor editor = getPreferences(MODE_PRIVATE).edit();
+                    int defaultValue = getPreferences(MODE_PRIVATE).getInt("count_key",count);
+                    ++defaultValue;
+                    getPreferences(MODE_PRIVATE).edit().putInt("count_key",defaultValue).commit();
+                    count = getPreferences(MODE_PRIVATE).getInt("count_key",count);
+                    System.out.println("The count value is " + count);
+
+
+
                 }
             }
         });

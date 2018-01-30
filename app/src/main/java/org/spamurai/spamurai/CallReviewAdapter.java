@@ -1,6 +1,5 @@
 package org.spamurai.spamurai;
 
-import android.content.ClipData;
 import android.widget.ArrayAdapter;
 import java.util.ArrayList;
 import android.content.Context;

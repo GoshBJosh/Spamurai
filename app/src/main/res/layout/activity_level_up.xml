@@ -142,6 +142,7 @@
         android:layout_width="0dp"
         android:layout_height="31dp"
         android:text="@string/copyright"
+        android:gravity="center"
         android:layout_marginStart="38dp"
         android:layout_marginEnd="38dp"
         tools:layout_editor_absoluteY="541dp"

@@ -1,19 +1,10 @@
 package org.spamurai.spamurai;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.database.Cursor;
-import android.net.Uri;
 import android.provider.CallLog;
-import android.provider.ContactsContract;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import java.util.ArrayList;
 

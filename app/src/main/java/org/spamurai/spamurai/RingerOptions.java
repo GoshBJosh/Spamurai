@@ -16,7 +16,7 @@ public class RingerOptions extends AppCompatActivity{
         setContentView(R.layout.activity_ringer_options);
 
         // PROTECTION SWITCH ON/OFF
-        final Switch protectionSwitch = (Switch) findViewById(R.id.protectionSwitch);
+        final Switch protectionSwitch = (Switch) findViewById(R.id.switch_ringerOnOff);
 
         protectionSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
