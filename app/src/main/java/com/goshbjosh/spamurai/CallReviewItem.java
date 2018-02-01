@@ -1,4 +1,4 @@
-package org.spamurai.spamurai;
+package com.goshbjosh.spamurai;
 
 
 public class CallReviewItem {

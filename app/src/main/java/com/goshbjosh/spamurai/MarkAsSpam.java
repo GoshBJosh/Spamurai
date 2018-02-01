@@ -1,4 +1,4 @@
-package org.spamurai.spamurai;
+package com.goshbjosh.spamurai;
 
 import android.content.Context;
 import android.content.Intent;

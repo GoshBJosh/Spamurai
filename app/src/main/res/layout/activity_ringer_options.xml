@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="org.spamurai.spamurai.RingerOptions"
+    tools:context="com.goshbjosh.spamurai.RingerOptions"
     tools:layout_editor_absoluteY="25dp"
     tools:layout_editor_absoluteX="0dp">
 

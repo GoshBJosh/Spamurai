@@ -1,4 +1,4 @@
-package org.spamurai.spamurai;
+package com.goshbjosh.spamurai;
 
 import android.widget.ArrayAdapter;
 import java.util.ArrayList;
