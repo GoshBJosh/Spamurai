@@ -15,18 +15,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        // CONNECT 'MarkAsSpam' ACTIVITY
-        final Button callReviewButton = (Button)findViewById(R.id.button_markCall);
+        // BUTTON - Play Game
+        final Button playGameButton = (Button)findViewById(R.id.button_playGame);
 
-        callReviewButton.setOnClickListener(new View.OnClickListener() {
+        playGameButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent goToCallReview = new Intent(MainActivity.this, CallReview.class);
-                MainActivity.this.startActivity(goToCallReview);
+                Intent goToGame = new Intent(MainActivity.this, Z_BackStory.class);
+                MainActivity.this.startActivity(goToGame);
             }
         });
 
 
-        // CONNECT 'CALLREVIEW' ACTIVITY
+        // BUTTON - Ringer Options
         final Button ringerOptionsButton = (Button)findViewById(R.id.button_ringerOptions);
 
         ringerOptionsButton.setOnClickListener(new View.OnClickListener() {

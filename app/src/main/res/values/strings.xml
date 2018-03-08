@@ -31,5 +31,208 @@
     <string name='text_total'></string>
     <string name='button_home'>Back Home</string>
 
+    // Story - Global Elements
+    <string name="button_back">← Back</string>
+    <string name="button_home">Home</string>
+    <string name="text_untilNextTime">Until Next Time...
+    \n\n
+    Hope you like the story so far.
+    \n\n
+    I’ll finish it once the spam-call blocking part of the app is up and running. If you can’t stand waiting, then find a friend that codes— and tell them to help contribute to OUR GITHUB PAGE HERE. That way we can get back to the show.
+    \n\n
+    Cuz the story keeps a’flowin once the app starts a’goin.
+    </string>
+
+
+    // Story
+    <string name="title_backStory">Play the Game</string>
+    <string name="text_backStory">Welcome to JaPantry. A Japanese themed world filled with sentient food. It’s here that we find our main character, Spammy. A little meat-sponge that works at the fish market.
+    \n\n
+    But Spammy is considered a monster in JaPantry. Most of the city’s inhabitants are made of whole foods, or the combination of whole foods. Emperor Tim Pura, for example, is a shrimp fried in batter. While Spammy’s boss, Ed Amame, is nothing more than a salted soybean.
+    \n\n
+    Spammy on the other hand is this strange meat puree. When a cow gets divided into individual meats, the desirable parts are all removed. What’s left over are all the pieces that nobody wants. Those get blended together, spiced, and pressed into patties. Which is the short origin-story of our protagonist.
+    </string>
+    <string name="title_grossButOn">Gross... But On With the Story</string>
+    <string name="text_grossButOn">One day, while Spammy is organizing stock in the back of their food stall when a stranger approaches the booth.
+    \n\n
+    Typically Spammy doesn’t handle the customer’s orders. But this stranger seems to be staring through the employees at the stall, and right at Spammy. What’s weirder still, is that this stranger seems to be shrouded in a dark plastic… wrapper.
+    \n\n
+    From beneath the wrapper comes a greenish hand, beckoning Spammy over...
+    \n\n
+    What do you do?
+    </string>
+
+    <string name="title_strangerDanger">Stranger Danger— Avoid This Guy at All Costs</string>
+    <string name="text_strangerDanger">Spammy pretends not to notice. Appearing to concentrate deeply, he walks towards the back of the stall. “If I can just slip out of the booth a second...” Spammy thinks to himself, “It’s busy enough that someone will occupy this creepy customer.”
+    \n\n
+    Behind the row of food stalls is an empty lane that the market employees use to move about. “The perfect time for a bathroom break” Spammy concludes, figuring it’d eat up the most time. Heading towards the end of the ally, he makes it out onto the market floor.
+    \n\n
+    The restrooms are at the other end of the market. But right as he rounds the corner, he sees the cloaked green mass pushing through the crowd towards him.
+    \n\n
+    I guess it’s time for fight or flight...
+    </string>
+
+    <string name="title_placeToHide">Find a Place to Hide</string>
+    <string name="text_placeToHide">Without making it too obvious— Spammy dips below the shoulder level of the crowd, and doubles back towards the food stall. But the employee zone is still a long ways away. So maybe it’s worth finding a place to hide...
+    \n\n
+    The market is laid out in a grid. Which doesn’t offer many places to conceal one’s self... But Spammy eventually finds this humongous fish stationed next to a stall. It’s hanging vertically by its tail, and gets much wider as the mouth touches the ground. “It’s like a deep-sea teepee”, Spammy chuckles to himself. Nobody’d expect someone to hide in there... That’d be cartoonish.
+    \n\n
+    Quickly Spammy clambers onto the platform, and weaves his body between the fish’s jowls. But while peering out into the crowd, an unsettling feel sets in. This mouth feels humid… and there seems to be a breeze coming from above. It’s almost as if it were still... breathing.
+    \n\n
+    Yomp! Dead… Turns out this fish was a little fresher than you had anticipated. Maybe you should have faced your fears, and confronted the stranger.
+    \n\n
+    But look at it this way; 92% of people die of natural causes. So in a way you’re kind of special.
+    \n\n
+    The end… Or an end. The game’s longer if you make better decisions.
+    </string>
+
+    <string name="title_confrontTheStranger">Confront the Stranger</string>
+    <string name="text_confrontTheStranger">You never get a second chance at making a good first impression. So Spammy decides to see what this guy wants.
+    \n\n
+    The shadowy figure lopes to a heavy stop in front of Spammy. As if the gravity suddenly doubled in the room. From beneath the hood pokes a slender green nose— cutting the shadows away from its face. “Hey wait a second...” Spammy gasp. “This... ‘he’ isn’t a him at all!”
+    \n\n
+    From beneath the veil blossoms the face of a beautiful girl. But there’s a deadness to her eyes. Like two emeralds lying at the bottom of a milky broth. “Is she bewitched?”, Spammy wonders...
+    \n\n
+    Slowly the girl leans forward. Craning her neck with a slight tilt. Spammy’s stomach drops...
+    </string>
+
+    <string name="title_propose">Propose (in Self Defense)</string>
+    <string name="text_propose">“Well if there’s one thing I’ve learned from mainstream books and movies”, Spammy posits, “It’s that a female lead in the story will always put a love interest ahead of their quest...”
+    \n\n
+    The girl reaches forward with an icy finger, as if to carve the life out of its victim. “And on the off chance that she’s actually the hero of this story, and I’m just the side-character…” Spammy continues, “I should be able to…”
+    \n\n
+    He drops to one knee.
+    \n\n
+    “Trash-girl, will you marry me?”
+    \n\n
+    Trash-girl pulls back in shock. Her hood slopes downward in a moment of consideration. “Yeshhhh”, she finally bellows from beneath her veil. And from that point forward, the two lovebirds lived happily ever after. Together in holy meat-tromony.
+    \n\n
+    So when it comes to women— there are many fish in the sea. And some of those fish are actually on land at the fish market. And one of those fish is not a fish at all. But a trash-girl who’s willing to take a chance with one strange little meatball.
+    \n\n
+    The end… Or an end. The game’s longer if you make better decisions.
+    </string>
+
+    <string name="title_askWhatSheWants">Ask What She Wants</string>
+    <string name="text_askWhatSheWants">“So… uh, what do you want?!” Spammy fidgets with the words before adjusting his eyes to the floor. He’s never felt this uncomfortable in his life, and can’t wait for it all to be over.
+    \n\n
+    Leaning past the edge of his cheek, she whispers into Spammy’s ear.
+    \n\n
+    ‘The Game…” she says.
+    \n\n
+    What?!?! DAAAGH!! You just lost the game…
+    \n\n
+    No, not this game. THE game. The game where the one objective is to not think about the game. Psssh, stupid trash-girl...
+    \n\n
+    https://en.wikipedia.org/wiki/The_Game_(mind_game)
+    \n\n
+    The end… Or an end. The game’s longer if you make better decisions.
+    </string>
+
+    <string name="title_strangerIsJustAFriend">A Stranger is Just a Friend You Haven't Met</string>
+    <string name="text_strangerIsJustAFriend">Spammy isn’t very popular. So any attention is better than no attention, right? Plus he still has both halves of this kickass friendship necklace he bought. And you can’t spell ‘friend’  without ‘-end’. As in... each person has an end of a kickass friendship necklace.
+    “What’s with the food-burka?” Spammy asks. “... My name is Sue Shi.” The stranger explains. Under the cloak is a plump woman who appears to be fish over rice. “I am from the Order of the Oder. We’re a secret society of food that’s gone… Bad.” she grins.
+    “We wear wrappers in public to conceal our appearance. In a way, you and I are very similar. Just food that others find... distasteful.” “Youch”, thinks Spammy. But it’s nice to have a little recognition for his pain. And Sue seems to be well intentioned.
+    “But we need to go quickly Spammy. We’re already late...” Sue twists to walk away. “How did she know my name?” Spammy wonders. Something is either very right here, or very wrong.
+    </string>
+
+    <string name="title_askMyManager">Uhh, I'll Have to Ask My Manager...</string>
+    <string name="text_askMyManager">“No” says Mr. Amame.
+    \n\n
+    Spammy turns, and shrugs towards the girl.
+    \n\n
+    Her face crinkles in confusion, and slowly she angles back into the crowd. Moments later, Spammy realizes he's made a big mistake. Phone in hand, he hurriedly writes out a ‘Missed Connections’ on Craigslist. But to no avail. Spammy lives out the rest of his days as a stock boy. Always wondering ‘what if’...
+    \n\n
+    The end… Or an end. The game’s longer if you make better decisions.
+    </string>
+
+    <string name="title_seemsLegit">Seems Legit— Let’s Go With Her</string>
+    <string name="text_seemsLegit">Realizing Sue’s already a few strides ahead of him, he scramble around the edge of the booth to catch up.
+    \n\n
+    With the hood slouched over her face— the two exit the market, and begin down a side street towards the wharf.
+    \n\n
+    “Your boss and I are good friends, actually.” Her voice begins to gain color as they reach a comfortable distance from the market. “I met Edward Amame when he first moved to JaPantry 20 years ago. He’s both worked for me, and I’ve worked for him.”
+    \n\n
+    Everything carries this cryptic tone. Spammy’s waiting for the other shoe to drop.
+    \n\n
+    They kind of seem like the bad guys… But I can’t tell yet.
+    </string>
+
+    <string name="title_seeWhereThisGoes">Let's See Where This Goes</string>
+    <string name="text_seeWhereThisGoes">The street dead ends at a  warehouse in the center of a vacant lot. Through the doors Spammy is greeted by small collective of covered foods. With only slits of light coming through the high-windows, the whole scene carries this eerie cultish vibe.
+    \n\n
+    “All food has an expiration date.” Sue starts. “But with advances in technology, we’ve extended that date... Lately Emperor Tim Pura has been experimenting with preservatives. He wanted to become immortal. But the chemicals have proven unstable. The synthetic ingredients have taken over his body— and now he’s barely the food he once was...”
+    \n\n
+    “With each growing day, the Emperor grows increasingly paranoid of natural foods… He’s begun production of a factory to build ingredients rather than harvest them. That way he can raise an army completely loyal to himself. We believe his goal is to wipe out the citizens of JaPantry, and establish a dynasty of artificial cuisine.”
+    \n\n
+    “But we have a plan…” Sue’s tone changes. “There’s a great Beast from the East that preys upon fresh foods. And because preservatives retain the appearance of freshness— we believe it will hunt them as well.”  The room grows suddenly cold. “So the plan is to spoil everyone… Then lure the beast into JaPantry. With only the preservatives appealing to the monster, it will target Emperor Tim Pura and his army.”
+    \n\n
+    “This is where you come in Spammy.” The little meatball’s stomach drops... “The market is the epicenter for natural ingredients. Since you’re an insider, we could use you to sabotage the system; and force all new foods to go bad.” “But... people could die.” Spammy retorts, “Is it really worth sacrificing innocent lives for this?”
+    </string>
+    <string name="title_makeLikeABanana">Make Like a Banana, and Split</string>
+    <string name="text_makeLikeABanana">“This is a little too much…” Spammy demurs. “I need… a moment to myself to think about it.” Sue concedes to his request. She knows this is a lot to take in. So Spammy anxiously hops through the door to get some fresh air. Moving around typically helps his anxiety. But in this case his body won’t stop after he exits. As if driven by a mind of their own, his legs continue to truck his body across the vacant lot. Walking turns into a run as soon as he hits the pavement.
+    \n\n
+    Quickly he traces his way back through streets. Knowing that his former companion will soon come looking for him. As soon as the path begin to look familiar, Spammy moves a few streets over— to obscure his trail. Everything seems clear. But Spammy can’t shake this feeling of being watched...
+    \n\n
+    After a few more blocks, the fear overpowers him. He takes shelter behind some rubbish bins, and peers out into the street. For a moment he feels a bit silly. But indeed someone has been following him. A dark lumpy mass is skulking through the streets along his former path.
+    \n\n
+    It’s Ed Amame from the fish market. “My Boss?!? What’s he doing here?” Spammy snorts to himself. “Is he looking for me because I left work early? Or... is he part of The Order?” Both options seem to lead towards trouble.
+    </string>
+
+    <string name="title_spoilsOfWar">Enjoy the Spoils of War</string>
+    <string name="text_spoilsOfWar">Congratulation.
+    Sue and the crew are going to will train Spammy in the dark side of being Spamurai. And together with your new found fiends, you’ll spoil the citizens of JaPanty in order to save them.
+    In this storyline we’ll get leaner, meaner, and a little bit greener. Because revenge doesn’t have to be... a dish best served cold.
+    Kampai!
+    </string>
+
+    <string name="title_nopeOutOfThere">Let's 'Nope' Right Out of There</string>
+    <string name="text_nopeOutOfThere">With Sue leading a few paces ahead, it’s easy to peel off unnoticed. Spammy dips into the alleyway, and darts towards the next street over. “What a piece of work.” he concludes. Slightly comforted by the idea that he’s not the lowest member of the food chain.
+    \n\n
+    Quickly he traces his way back through streets. Knowing that his former companion will soon come looking for him. As soon as the path begin to look familiar, Spammy moves a few streets over— to obscure his trail. Everything seems clear. But Spammy can’t shake this feeling of being watched...
+    \n\n
+    After a few more blocks, the fear overpowers him. He takes shelter behind some rubbish bins, and peers out into the street. For a moment he feels a bit silly. But indeed someone has been following him. A dark lumpy mass is skulking through the streets along his former path.
+    \n\n
+    It’s Ed Amame from the fish market. “My Boss?!? What’s he doing here?” Spammy snorts to himself. “Is he looking for me because I left work early? Or... is he part of The Order?” Both options seem to lead towards trouble.
+    </string>
+
+    <string name="title_sneakPastHim">Sneak Past Him</string>
+    <string name="text_sneakPastHim">Geez, somebody has trust issues...
+    \n\n
+    While you and Ed weren’t close, he was the nearest thing you had to a friend. And without confidence in other people, you live out the rest of your days as a social recluse.
+    \n\n
+    Eventually the isolation and paranoia twists you into the monster people think you are. You stalk the streets at night, looking to exact revenge on a world who stole your innocence. Because in JaPantry— you either die a hero, or you live long enough to become the villain.
+    \n\n
+    The end… Or an end. The game’s longer if you make better decisions.
+    </string>
+
+    <string name="title_approachMrAmame">Approach Mr. Amame</string>
+    <string name="text_approachMrAmame">Recognizing a friend, Spammy bursts from behind the trash cans. “Dear heavens!” croaks Ed Amame. His body tips sideways, and rocks him tenderly onto his back. The benefit of being so round is that falling just turns into rolling.
+    \n\n
+    “You just about gave me a heart attack.” Ed declares, as he slowly turns his body towards Spammy. “But you were sneaking up on me!” interjects Spammy. “I was trying to find you... without being found myself.” explains Ed, as he begins to rock back and forth to right himself.
+    \n\n
+    “Look, my boy.” Ed says, slowly standing up. “Dark forces are at work here... the Emperor is plotting against the people of JaPantry. Then Sue Shi intends on waging her own war that could sacrifice many lives. Each risks throwing JaPantry into total JaPanic.”
+    \n\n
+    “What our city needs is a hero. One that can bring these foods back to the land of milk and honey.” A glint begins to show in Ed Amame’s eyes. “With your permission, I would like to train you in the arts of the Spamurai.” Spammy is taken aback. To think that such a responsibility would fall onto his shoulders. But this decision could alter the course of the rest of his life.
+    </string>
+
+    <string name="title_becomeASpamurai">Become a Spamurai</string>
+    <string name="text_becomeASpamurai">Destiny’s Calling— and you won’t let it go to voicemail.
+    \n\n
+    With the help of Ed Amame and friends— Spammy will become the food of legends.
+    \n\n
+    Kampai!
+    </string>
+
+    <string name="title_becomeAnEngineer">Become an Engineer</string>
+    <string name="text_becomeAnEngineer">Real problems fear... a clever engineer.
+    \n\n
+    Plus it probably pays more than being a karate-meat-thing, err whatever. So Spammy
+    \n\n
+    The end… Or an end. The game’s longer if you make better decisions.
+    </string>
+
+
+
+
 
 </resources>

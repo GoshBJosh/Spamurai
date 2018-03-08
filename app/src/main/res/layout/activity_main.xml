@@ -70,11 +70,11 @@
         tools:layout_editor_absoluteX="15dp" />
 
     <Button
-        android:id="@+id/button_markCall"
+        android:id="@+id/button_playGame"
         android:layout_width="0dp"
         android:layout_height="53dp"
         android:paddingBottom="5dp"
-        android:text="@string/mark_call"
+        android:text="@string/title_backStory"
         android:textColor="@color/colorAccent"
         android:background="@drawable/button"
         tools:layout_constraintTop_creator="1"
@@ -138,7 +138,13 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintVertical_bias="1.0" />
 
-
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="505dp" />
 
 
 </android.support.constraint.ConstraintLayout>

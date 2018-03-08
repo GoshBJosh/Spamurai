@@ -45,10 +45,15 @@
             android:name=".MarkAsSpam"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        // LEVEL UP ACTIVITY
         <activity
             android:name=".LevelUp"
             android:label="@string/title_activity_level_up"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        // STORY MODE - BACKSTORY
+        <activity
+            android:name=".Z_BackStory"
+            android:label="@string/title_activity_level_up"></activity>
     </application>
 
 </manifest>
