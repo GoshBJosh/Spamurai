@@ -29,20 +29,19 @@
     // Level Up
     <string name='h2_reportedtotal'>Total:</string>
     <string name='text_total'></string>
-    <string name='button_home'>Back Home</string>
+
 
     // Story - Global Elements
     <string name="button_back">← Back</string>
     <string name="button_home">Home</string>
-    <string name="text_untilNextTime">Until Next Time...
-    \n\n
+    <string name="title_untilNextTime">Until Next Time...</string>
+    <string name="text_untilNextTime">
     Hope you like the story so far.
     \n\n
-    I’ll finish it once the spam-call blocking part of the app is up and running. If you can’t stand waiting, then find a friend that codes— and tell them to help contribute to OUR GITHUB PAGE HERE. That way we can get back to the show.
-    \n\n
-    Cuz the story keeps a’flowin once the app starts a’goin.
+    I’ll finish it once the spam-call blocking part of the app is up and running. If you can’t stand waiting, then find a friend that codes— and tell them to contribute to...
     </string>
-
+    <string name="text_untilNextTime2">Cuz the story keeps a’flowin once the app starts a’goin.</string>
+    <string name="button_github"><u>Our GitHub Page</u></string>
 
     // Story
     <string name="title_backStory">Play the Game</string>
@@ -130,8 +129,11 @@
 
     <string name="title_strangerIsJustAFriend">A Stranger is Just a Friend You Haven't Met</string>
     <string name="text_strangerIsJustAFriend">Spammy isn’t very popular. So any attention is better than no attention, right? Plus he still has both halves of this kickass friendship necklace he bought. And you can’t spell ‘friend’  without ‘-end’. As in... each person has an end of a kickass friendship necklace.
+    \n\n
     “What’s with the food-burka?” Spammy asks. “... My name is Sue Shi.” The stranger explains. Under the cloak is a plump woman who appears to be fish over rice. “I am from the Order of the Oder. We’re a secret society of food that’s gone… Bad.” she grins.
+    \n\n
     “We wear wrappers in public to conceal our appearance. In a way, you and I are very similar. Just food that others find... distasteful.” “Youch”, thinks Spammy. But it’s nice to have a little recognition for his pain. And Sue seems to be well intentioned.
+    \n\n
     “But we need to go quickly Spammy. We’re already late...” Sue twists to walk away. “How did she know my name?” Spammy wonders. Something is either very right here, or very wrong.
     </string>
 
@@ -157,7 +159,7 @@
     They kind of seem like the bad guys… But I can’t tell yet.
     </string>
 
-    <string name="title_seeWhereThisGoes">Let's See Where This Goes</string>
+    <string name="title_seeWhereThisGoes">Let's See Where This Goes...</string>
     <string name="text_seeWhereThisGoes">The street dead ends at a  warehouse in the center of a vacant lot. Through the doors Spammy is greeted by small collective of covered foods. With only slits of light coming through the high-windows, the whole scene carries this eerie cultish vibe.
     \n\n
     “All food has an expiration date.” Sue starts. “But with advances in technology, we’ve extended that date... Lately Emperor Tim Pura has been experimenting with preservatives. He wanted to become immortal. But the chemicals have proven unstable. The synthetic ingredients have taken over his body— and now he’s barely the food he once was...”
@@ -180,13 +182,16 @@
 
     <string name="title_spoilsOfWar">Enjoy the Spoils of War</string>
     <string name="text_spoilsOfWar">Congratulation.
+    \n\n
     Sue and the crew are going to will train Spammy in the dark side of being Spamurai. And together with your new found fiends, you’ll spoil the citizens of JaPanty in order to save them.
+    \n\n
     In this storyline we’ll get leaner, meaner, and a little bit greener. Because revenge doesn’t have to be... a dish best served cold.
+    \n\n
     Kampai!
     </string>
 
-    <string name="title_nopeOutOfThere">Let's 'Nope' Right Out of There</string>
-    <string name="text_nopeOutOfThere">With Sue leading a few paces ahead, it’s easy to peel off unnoticed. Spammy dips into the alleyway, and darts towards the next street over. “What a piece of work.” he concludes. Slightly comforted by the idea that he’s not the lowest member of the food chain.
+    <string name="title_nopeRightOut">'Nope' Right Out of There</string>
+    <string name="text_nopeRightOut">With Sue leading a few paces ahead, it’s easy to peel off unnoticed. Spammy dips into the alleyway, and darts towards the next street over. “What a piece of work.” he concludes. Slightly comforted by the idea that he’s not the lowest member of the food chain.
     \n\n
     Quickly he traces his way back through streets. Knowing that his former companion will soon come looking for him. As soon as the path begin to look familiar, Spammy moves a few streets over— to obscure his trail. Everything seems clear. But Spammy can’t shake this feeling of being watched...
     \n\n

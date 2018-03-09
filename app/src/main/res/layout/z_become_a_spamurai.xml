@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.goshbjosh.spamurai.Z_BecomeASpamurai"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1090dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/h1"
+                android:layout_width="265dp"
+                android:layout_height="87dp"
+                android:fontFamily="@font/h1_font"
+                android:text="@string/title_becomeASpamurai"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="40dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageView
+                android:id="@+id/image_character"
+                android:layout_width="136dp"
+                android:layout_height="129dp"
+                app:srcCompat="@drawable/success_spammy"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="113dp" />
+
+            <ImageView
+                android:id="@+id/box"
+                android:layout_width="240dp"
+                android:layout_height="185dp"
+                android:scaleType="fitXY"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:srcCompat="@drawable/box"
+                tools:layout_editor_absoluteY="260dp" />
+
+            <TextView
+                android:id="@+id/text_story"
+                android:layout_width="200dp"
+                android:layout_height="145dp"
+                android:text="@string/text_becomeASpamurai"
+                android:textColor="@color/textColor"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteY="283dp" />
+
+
+            <TextView
+                android:id="@+id/h2"
+                android:layout_width="265dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/h1_font"
+                android:text="@string/title_becomeASpamurai"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteY="473dp" />
+
+            <ImageView
+                android:id="@+id/box_untilNextTime"
+                android:layout_width="240dp"
+                android:layout_height="334dp"
+                android:scaleType="fitXY"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:srcCompat="@drawable/box"
+                tools:layout_editor_absoluteY="532dp" />
+
+            <TextView
+                android:id="@+id/text_untilNextTime"
+                android:layout_width="200dp"
+                android:layout_height="143dp"
+                android:text="@string/text_untilNextTime"
+                android:textColor="@color/textColor"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteY="551dp" />
+
+            <Button
+                android:id="@+id/button_github"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="@drawable/box_text"
+                android:text="@string/button_github"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteY="694dp" />
+
+            <TextView
+                android:id="@+id/text_untilNextTime2"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="@string/text_untilNextTime2"
+                android:textColor="@color/textColor"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteY="794dp" />
+
+
+            <Button
+                android:id="@+id/button_one"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button"
+                android:paddingBottom="5dp"
+                android:text="@string/button_home"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteY="893dp" />
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_back"
+                android:paddingBottom="5dp"
+                android:text="@string/button_back"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteY="968dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>

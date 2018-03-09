@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.goshbjosh.spamurai.Z_GrossButOnWith"
+    tools:context="com.goshbjosh.spamurai.Z_ApproachMrAmame"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="25dp">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="839dp"
+        android:layout_height="1204dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
@@ -24,7 +24,7 @@
                 android:layout_width="265dp"
                 android:layout_height="106dp"
                 android:fontFamily="@font/h1_font"
-                android:text="@string/title_grossButOn"
+                android:text="@string/title_approachMrAmame"
                 android:textAlignment="center"
                 android:textColor="@color/textColor"
                 android:textSize="40dp"
@@ -36,23 +36,21 @@
             <ImageView
                 android:id="@+id/box"
                 android:layout_width="240dp"
-                android:layout_height="394dp"
+                android:layout_height="777dp"
                 android:scaleType="fitXY"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:srcCompat="@drawable/box"
-                tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="122dp" />
 
             <TextView
                 android:id="@+id/text_story"
                 android:layout_width="200dp"
-                android:layout_height="341dp"
-                android:text="@string/text_grossButOn"
+                android:layout_height="698dp"
+                android:text="@string/text_approachMrAmame"
                 android:textColor="@color/textColor"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteX="40dp"
                 tools:layout_editor_absoluteY="148dp" />
 
 
@@ -66,8 +64,7 @@
                 android:textColor="@color/colorAccent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteX="40dp"
-                tools:layout_editor_absoluteY="554dp" />
+                tools:layout_editor_absoluteY="931dp" />
 
             <Button
                 android:id="@+id/button_two"
@@ -79,8 +76,7 @@
                 android:textColor="@color/colorAccent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteX="40dp"
-                tools:layout_editor_absoluteY="636dp" />
+                tools:layout_editor_absoluteY="1013dp" />
 
             <Button
                 android:id="@+id/button_back"
@@ -92,8 +88,7 @@
                 android:textColor="@color/colorAccent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteX="32dp"
-                tools:layout_editor_absoluteY="711dp" />
+                tools:layout_editor_absoluteY="1088dp" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>

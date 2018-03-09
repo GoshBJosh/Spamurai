@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.goshbjosh.spamurai.Z_GrossButOnWith"
+    tools:context="com.goshbjosh.spamurai.Z_StrangerIsJust"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="25dp">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="839dp"
+        android:layout_height="1137dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
@@ -22,38 +22,35 @@
             <TextView
                 android:id="@+id/h1"
                 android:layout_width="265dp"
-                android:layout_height="106dp"
+                android:layout_height="136dp"
                 android:fontFamily="@font/h1_font"
-                android:text="@string/title_grossButOn"
+                android:text="@string/title_strangerIsJustAFriend"
                 android:textAlignment="center"
                 android:textColor="@color/textColor"
                 android:textSize="40dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <ImageView
                 android:id="@+id/box"
                 android:layout_width="240dp"
-                android:layout_height="394dp"
+                android:layout_height="672dp"
                 android:scaleType="fitXY"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:srcCompat="@drawable/box"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="122dp" />
+                tools:layout_editor_absoluteY="160dp" />
 
             <TextView
                 android:id="@+id/text_story"
                 android:layout_width="200dp"
-                android:layout_height="341dp"
-                android:text="@string/text_grossButOn"
+                android:layout_height="622dp"
+                android:text="@string/text_strangerIsJustAFriend"
                 android:textColor="@color/textColor"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteX="40dp"
-                tools:layout_editor_absoluteY="148dp" />
+                tools:layout_editor_absoluteY="184dp" />
 
 
             <Button
@@ -62,12 +59,11 @@
                 android:layout_height="50dp"
                 android:background="@drawable/button"
                 android:paddingBottom="5dp"
-                android:text="@string/title_strangerDanger"
+                android:text="@string/title_seemsLegit"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteX="40dp"
-                tools:layout_editor_absoluteY="554dp" />
+                tools:layout_editor_absoluteY="878dp" />
 
             <Button
                 android:id="@+id/button_two"
@@ -75,12 +71,11 @@
                 android:layout_height="50dp"
                 android:background="@drawable/button"
                 android:paddingBottom="5dp"
-                android:text="@string/title_strangerIsJustAFriend"
+                android:text="@string/title_askMyManager"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteX="40dp"
-                tools:layout_editor_absoluteY="636dp" />
+                tools:layout_editor_absoluteY="949dp" />
 
             <Button
                 android:id="@+id/button_back"
@@ -92,8 +87,7 @@
                 android:textColor="@color/colorAccent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteX="32dp"
-                tools:layout_editor_absoluteY="711dp" />
+                tools:layout_editor_absoluteY="1021dp" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
