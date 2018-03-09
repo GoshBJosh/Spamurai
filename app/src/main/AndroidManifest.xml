@@ -27,8 +27,7 @@
         // RINGER OPTIONS
         <activity
             android:name=".RingerOptions"
-            android:label="Ringer Options"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:label="Ringer Options"></activity>
         // DETECT INCOMING CALL
         <receiver android:name=".PhoneStateReceiver">
             <intent-filter>
@@ -38,22 +37,87 @@
         // CALL REVIEW ACTIVITY
         <activity
             android:name=".CallReview"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:label="@string/app_name"></activity>
         // MARK AS SPAM ACTIVITY
         <activity
             android:name=".MarkAsSpam"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:label="@string/app_name"></activity>
         // LEVEL UP ACTIVITY
         <activity
             android:name=".LevelUp"
-            android:label="@string/title_activity_level_up"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        // STORY MODE - BACKSTORY
+            android:label="@string/title_activity_level_up"></activity>
+        // STORY - Approach Mr. Amame
+        <activity
+            android:name=".Z_ApproachMrAmame"
+            android:label="@string/title_approachMrAmame"></activity>
+        // STORY - Ask My Manager
+        <activity
+            android:name=".Z_AskMyManager"
+            android:label="@string/title_askMyManager"></activity>
+        // STORY - Ask What She Wants
+        <activity
+            android:name=".Z_AskWhatSheWants"
+            android:label="@string/title_askWhatSheWants"></activity>
+        // STORY - Back Story
         <activity
             android:name=".Z_BackStory"
-            android:label="@string/title_activity_level_up"></activity>
+            android:label="@string/title_backStory"></activity>
+        // STORY - Become An Engineer
+        <activity
+            android:name=".Z_BecomeAnEngineer"
+            android:label="@string/title_becomeAnEngineer"></activity>
+        // STORY - Become A Spamurai
+        <activity
+            android:name=".Z_BecomeASpamurai"
+            android:label="@string/title_becomeASpamurai"></activity>
+        // STORY - Confront Stranger
+        <activity
+            android:name=".Z_ConfrontStranger"
+            android:label="@string/title_confrontTheStranger"></activity>
+        // STORY - Gross... But on With
+        <activity
+            android:name=".Z_GrossButOnWith"
+            android:label="@string/title_grossButOn"></activity>
+        // STORY - Make Like a Banana
+        <activity
+            android:name=".Z_MakeLikeABanana"
+            android:label="@string/title_makeLikeABanana"></activity>
+        // STORY - Nope Right Out
+        <activity
+            android:name=".Z_NopeRightOut"
+            android:label="@string/title_nopeRightOut"></activity>
+        // STORY - Place to Hide
+        <activity
+            android:name=".Z_PlaceToHide"
+            android:label="@string/title_placeToHide"></activity>
+        // STORY - Propose
+        <activity
+            android:name=".Z_ProposeInSelfDefense"
+            android:label="@string/title_propose"></activity>
+        // STORY - Seems Legit
+        <activity
+            android:name=".Z_SeemsLegit"
+            android:label="@string/title_seemsLegit"></activity>
+        // STORY - See Where This Goes
+        <activity
+            android:name=".Z_SeeWhereThisGoes"
+            android:label="@string/title_seeWhereThisGoes"></activity>
+        // STORY - Sneak Past Him
+        <activity
+            android:name=".Z_SneakPastHim"
+            android:label="@string/title_sneakPastHim"></activity>
+        // STORY - Spoils of War
+        <activity
+            android:name=".Z_SpoilsOfWar"
+            android:label="@string/title_spoilsOfWar"></activity>
+        // STORY - Stranger Danger
+        <activity
+            android:name=".Z_StrangerDanger"
+            android:label="@string/title_strangerDanger"></activity>
+        // STORY - Stranger is Just A freind
+        <activity
+            android:name=".Z_StrangerIsJust"
+            android:label="@string/title_strangerIsJustAFriend"></activity>
     </application>
 
 </manifest>

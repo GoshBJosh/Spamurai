@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Spamurai</string>
     <string name="action_settings">Settings</string>
-    <string name="copyright">© Josh B\'Gosh 2016-18, All Rights Reserved.</string>
+    <string name="copyright">© Josh B\'Gosh 2016&#8211;18, All Rights Reserved.</string>
 
     // Main
     <string name='mark_call'>Mark Call As Spam</string>
@@ -28,17 +28,17 @@
 
     // Level Up
     <string name='h2_reportedtotal'>Total:</string>
-    <string name='text_total'></string>
+    <string name='text_total'>.</string>
 
 
     // Story - Global Elements
     <string name="button_back">← Back</string>
     <string name="button_home">Home</string>
-    <string name="title_untilNextTime">Until Next Time...</string>
+    <string name="title_untilNextTime">Until Next Time&#8230;</string>
     <string name="text_untilNextTime">
     Hope you like the story so far.
     \n\n
-    I’ll finish it once the spam-call blocking part of the app is up and running. If you can’t stand waiting, then find a friend that codes— and tell them to contribute to...
+    I’ll finish it once the spam-call blocking part of the app is up and running. If you can’t stand waiting, then find a friend that codes— and tell them to contribute to&#8230;
     </string>
     <string name="text_untilNextTime2">Cuz the story keeps a’flowin once the app starts a’goin.</string>
     <string name="button_github"><u>Our GitHub Page</u></string>
@@ -51,32 +51,32 @@
     \n\n
     Spammy on the other hand is this strange meat puree. When a cow gets divided into individual meats, the desirable parts are all removed. What’s left over are all the pieces that nobody wants. Those get blended together, spiced, and pressed into patties. Which is the short origin-story of our protagonist.
     </string>
-    <string name="title_grossButOn">Gross... But On With the Story</string>
+    <string name="title_grossButOn">Gross&#8230; But On With the Story</string>
     <string name="text_grossButOn">One day, while Spammy is organizing stock in the back of their food stall when a stranger approaches the booth.
     \n\n
     Typically Spammy doesn’t handle the customer’s orders. But this stranger seems to be staring through the employees at the stall, and right at Spammy. What’s weirder still, is that this stranger seems to be shrouded in a dark plastic… wrapper.
     \n\n
-    From beneath the wrapper comes a greenish hand, beckoning Spammy over...
+    From beneath the wrapper comes a greenish hand, beckoning Spammy over&#8230;
     \n\n
     What do you do?
     </string>
 
     <string name="title_strangerDanger">Stranger Danger— Avoid This Guy at All Costs</string>
-    <string name="text_strangerDanger">Spammy pretends not to notice. Appearing to concentrate deeply, he walks towards the back of the stall. “If I can just slip out of the booth a second...” Spammy thinks to himself, “It’s busy enough that someone will occupy this creepy customer.”
+    <string name="text_strangerDanger">Spammy pretends not to notice. Appearing to concentrate deeply, he walks towards the back of the stall. “If I can just slip out of the booth a second&#8230;” Spammy thinks to himself, “It’s busy enough that someone will occupy this creepy customer.”
     \n\n
     Behind the row of food stalls is an empty lane that the market employees use to move about. “The perfect time for a bathroom break” Spammy concludes, figuring it’d eat up the most time. Heading towards the end of the ally, he makes it out onto the market floor.
     \n\n
     The restrooms are at the other end of the market. But right as he rounds the corner, he sees the cloaked green mass pushing through the crowd towards him.
     \n\n
-    I guess it’s time for fight or flight...
+    I guess it’s time for fight or flight&#8230;
     </string>
 
     <string name="title_placeToHide">Find a Place to Hide</string>
-    <string name="text_placeToHide">Without making it too obvious— Spammy dips below the shoulder level of the crowd, and doubles back towards the food stall. But the employee zone is still a long ways away. So maybe it’s worth finding a place to hide...
+    <string name="text_placeToHide">Without making it too obvious— Spammy dips below the shoulder level of the crowd, and doubles back towards the food stall. But the employee zone is still a long ways away. So maybe it’s worth finding a place to hide&#8230;
     \n\n
-    The market is laid out in a grid. Which doesn’t offer many places to conceal one’s self... But Spammy eventually finds this humongous fish stationed next to a stall. It’s hanging vertically by its tail, and gets much wider as the mouth touches the ground. “It’s like a deep-sea teepee”, Spammy chuckles to himself. Nobody’d expect someone to hide in there... That’d be cartoonish.
+    The market is laid out in a grid. Which doesn’t offer many places to conceal one’s self&#8230; But Spammy eventually finds this humongous fish stationed next to a stall. It’s hanging vertically by its tail, and gets much wider as the mouth touches the ground. “It’s like a deep-sea teepee”, Spammy chuckles to himself. Nobody’d expect someone to hide in there&#8230; That’d be cartoonish.
     \n\n
-    Quickly Spammy clambers onto the platform, and weaves his body between the fish’s jowls. But while peering out into the crowd, an unsettling feel sets in. This mouth feels humid… and there seems to be a breeze coming from above. It’s almost as if it were still... breathing.
+    Quickly Spammy clambers onto the platform, and weaves his body between the fish’s jowls. But while peering out into the crowd, an unsettling feel sets in. This mouth feels humid&#8230; and there seems to be a breeze coming from above. It’s almost as if it were still&#8230; breathing.
     \n\n
     Yomp! Dead… Turns out this fish was a little fresher than you had anticipated. Maybe you should have faced your fears, and confronted the stranger.
     \n\n
@@ -88,17 +88,17 @@
     <string name="title_confrontTheStranger">Confront the Stranger</string>
     <string name="text_confrontTheStranger">You never get a second chance at making a good first impression. So Spammy decides to see what this guy wants.
     \n\n
-    The shadowy figure lopes to a heavy stop in front of Spammy. As if the gravity suddenly doubled in the room. From beneath the hood pokes a slender green nose— cutting the shadows away from its face. “Hey wait a second...” Spammy gasp. “This... ‘he’ isn’t a him at all!”
+    The shadowy figure lopes to a heavy stop in front of Spammy. As if the gravity suddenly doubled in the room. From beneath the hood pokes a slender green nose— cutting the shadows away from its face. “Hey wait a second&#8230;” Spammy gasp. “This&#8230; ‘he’ isn’t a him at all!”
     \n\n
-    From beneath the veil blossoms the face of a beautiful girl. But there’s a deadness to her eyes. Like two emeralds lying at the bottom of a milky broth. “Is she bewitched?”, Spammy wonders...
+    From beneath the veil blossoms the face of a beautiful girl. But there’s a deadness to her eyes. Like two emeralds lying at the bottom of a milky broth. “Is she bewitched?”, Spammy wonders&#8230;
     \n\n
-    Slowly the girl leans forward. Craning her neck with a slight tilt. Spammy’s stomach drops...
+    Slowly the girl leans forward. Craning her neck with a slight tilt. Spammy’s stomach drops&#8230;
     </string>
 
     <string name="title_propose">Propose (in Self Defense)</string>
-    <string name="text_propose">“Well if there’s one thing I’ve learned from mainstream books and movies”, Spammy posits, “It’s that a female lead in the story will always put a love interest ahead of their quest...”
+    <string name="text_propose">“Well if there’s one thing I’ve learned from mainstream books and movies”, Spammy posits, “It’s that a female lead in the story will always put a love interest ahead of their quest&#8230;”
     \n\n
-    The girl reaches forward with an icy finger, as if to carve the life out of its victim. “And on the off chance that she’s actually the hero of this story, and I’m just the side-character…” Spammy continues, “I should be able to…”
+    The girl reaches forward with an icy finger, as if to carve the life out of its victim. “And on the off chance that she’s actually the hero of this story, and I’m just the side-character&#8230;” Spammy continues, “I should be able to&#8230;”
     \n\n
     He drops to one knee.
     \n\n
@@ -120,29 +120,29 @@
     \n\n
     What?!?! DAAAGH!! You just lost the game…
     \n\n
-    No, not this game. THE game. The game where the one objective is to not think about the game. Psssh, stupid trash-girl...
+    No, not this game. THE game. The game where the one objective is to not think about the game. Psssh, stupid trash-girl&#8230;
     \n\n
     https://en.wikipedia.org/wiki/The_Game_(mind_game)
     \n\n
     The end… Or an end. The game’s longer if you make better decisions.
     </string>
 
-    <string name="title_strangerIsJustAFriend">A Stranger is Just a Friend You Haven't Met</string>
-    <string name="text_strangerIsJustAFriend">Spammy isn’t very popular. So any attention is better than no attention, right? Plus he still has both halves of this kickass friendship necklace he bought. And you can’t spell ‘friend’  without ‘-end’. As in... each person has an end of a kickass friendship necklace.
+    <string name="title_strangerIsJustAFriend">A Stranger is Just a Friend You Haven\'t Met</string>
+    <string name="text_strangerIsJustAFriend">Spammy isn’t very popular. So any attention is better than no attention, right? Plus he still has both halves of this kickass friendship necklace he bought. And you can’t spell ‘friend’  without ‘-end’. As in&#8230; each person has an end of a kickass friendship necklace.
     \n\n
-    “What’s with the food-burka?” Spammy asks. “... My name is Sue Shi.” The stranger explains. Under the cloak is a plump woman who appears to be fish over rice. “I am from the Order of the Oder. We’re a secret society of food that’s gone… Bad.” she grins.
+    “What’s with the food-burka?” Spammy asks. “&#8230; My name is Sue Shi.” The stranger explains. Under the cloak is a plump woman who appears to be fish over rice. “I am from the Order of the Oder. We’re a secret society of food that’s gone… Bad.” she grins.
     \n\n
-    “We wear wrappers in public to conceal our appearance. In a way, you and I are very similar. Just food that others find... distasteful.” “Youch”, thinks Spammy. But it’s nice to have a little recognition for his pain. And Sue seems to be well intentioned.
+    “We wear wrappers in public to conceal our appearance. In a way, you and I are very similar. Just food that others find&#8230; distasteful.” “Youch”, thinks Spammy. But it’s nice to have a little recognition for his pain. And Sue seems to be well intentioned.
     \n\n
-    “But we need to go quickly Spammy. We’re already late...” Sue twists to walk away. “How did she know my name?” Spammy wonders. Something is either very right here, or very wrong.
+    “But we need to go quickly Spammy. We’re already late&#8230;” Sue twists to walk away. “How did she know my name?” Spammy wonders. Something is either very right here, or very wrong.
     </string>
 
-    <string name="title_askMyManager">Uhh, I'll Have to Ask My Manager...</string>
+    <string name="title_askMyManager">Uhh, I\'ll Have to Ask My Manager&#8230;</string>
     <string name="text_askMyManager">“No” says Mr. Amame.
     \n\n
     Spammy turns, and shrugs towards the girl.
     \n\n
-    Her face crinkles in confusion, and slowly she angles back into the crowd. Moments later, Spammy realizes he's made a big mistake. Phone in hand, he hurriedly writes out a ‘Missed Connections’ on Craigslist. But to no avail. Spammy lives out the rest of his days as a stock boy. Always wondering ‘what if’...
+    Her face crinkles in confusion, and slowly she angles back into the crowd. Moments later, Spammy realizes he\'s made a big mistake. Phone in hand, he hurriedly writes out a \‘Missed Connections\’ on Craigslist. But to no avail. Spammy lives out the rest of his days as a stock boy. Always wondering ‘what if’&#8230;
     \n\n
     The end… Or an end. The game’s longer if you make better decisions.
     </string>
@@ -159,25 +159,25 @@
     They kind of seem like the bad guys… But I can’t tell yet.
     </string>
 
-    <string name="title_seeWhereThisGoes">Let's See Where This Goes...</string>
+    <string name="title_seeWhereThisGoes">Let\'s See Where This Goes&#8230;</string>
     <string name="text_seeWhereThisGoes">The street dead ends at a  warehouse in the center of a vacant lot. Through the doors Spammy is greeted by small collective of covered foods. With only slits of light coming through the high-windows, the whole scene carries this eerie cultish vibe.
     \n\n
-    “All food has an expiration date.” Sue starts. “But with advances in technology, we’ve extended that date... Lately Emperor Tim Pura has been experimenting with preservatives. He wanted to become immortal. But the chemicals have proven unstable. The synthetic ingredients have taken over his body— and now he’s barely the food he once was...”
+    “All food has an expiration date.” Sue starts. “But with advances in technology, we’ve extended that date&#8230; Lately Emperor Tim Pura has been experimenting with preservatives. He wanted to become immortal. But the chemicals have proven unstable. The synthetic ingredients have taken over his body— and now he’s barely the food he once was&#8230;”
     \n\n
-    “With each growing day, the Emperor grows increasingly paranoid of natural foods… He’s begun production of a factory to build ingredients rather than harvest them. That way he can raise an army completely loyal to himself. We believe his goal is to wipe out the citizens of JaPantry, and establish a dynasty of artificial cuisine.”
+    “With each growing day, the Emperor grows increasingly paranoid of natural foods&#8230; He’s begun production of a factory to build ingredients rather than harvest them. That way he can raise an army completely loyal to himself. We believe his goal is to wipe out the citizens of JaPantry, and establish a dynasty of artificial cuisine.”
     \n\n
-    “But we have a plan…” Sue’s tone changes. “There’s a great Beast from the East that preys upon fresh foods. And because preservatives retain the appearance of freshness— we believe it will hunt them as well.”  The room grows suddenly cold. “So the plan is to spoil everyone… Then lure the beast into JaPantry. With only the preservatives appealing to the monster, it will target Emperor Tim Pura and his army.”
+    “But we have a plan…” Sue’s tone changes. “There’s a great Beast from the East that preys upon fresh foods. And because preservatives retain the appearance of freshness— we believe it will hunt them as well.”  The room grows suddenly cold. “So the plan is to spoil everyone&#8230; Then lure the beast into JaPantry. With only the preservatives appealing to the monster, it will target Emperor Tim Pura and his army.”
     \n\n
-    “This is where you come in Spammy.” The little meatball’s stomach drops... “The market is the epicenter for natural ingredients. Since you’re an insider, we could use you to sabotage the system; and force all new foods to go bad.” “But... people could die.” Spammy retorts, “Is it really worth sacrificing innocent lives for this?”
+    “This is where you come in Spammy.” The little meatball’s stomach drops&#8230; “The market is the epicenter for natural ingredients. Since you’re an insider, we could use you to sabotage the system; and force all new foods to go bad.” “But&#8230; people could die.” Spammy retorts, “Is it really worth sacrificing innocent lives for this?”
     </string>
     <string name="title_makeLikeABanana">Make Like a Banana, and Split</string>
-    <string name="text_makeLikeABanana">“This is a little too much…” Spammy demurs. “I need… a moment to myself to think about it.” Sue concedes to his request. She knows this is a lot to take in. So Spammy anxiously hops through the door to get some fresh air. Moving around typically helps his anxiety. But in this case his body won’t stop after he exits. As if driven by a mind of their own, his legs continue to truck his body across the vacant lot. Walking turns into a run as soon as he hits the pavement.
+    <string name="text_makeLikeABanana">“This is a little too much…” Spammy demurs. “I need&#8230; a moment to myself to think about it.” Sue concedes to his request. She knows this is a lot to take in. So Spammy anxiously hops through the door to get some fresh air. Moving around typically helps his anxiety. But in this case his body won’t stop after he exits. As if driven by a mind of their own, his legs continue to truck his body across the vacant lot. Walking turns into a run as soon as he hits the pavement.
     \n\n
-    Quickly he traces his way back through streets. Knowing that his former companion will soon come looking for him. As soon as the path begin to look familiar, Spammy moves a few streets over— to obscure his trail. Everything seems clear. But Spammy can’t shake this feeling of being watched...
+    Quickly he traces his way back through streets. Knowing that his former companion will soon come looking for him. As soon as the path begin to look familiar, Spammy moves a few streets over— to obscure his trail. Everything seems clear. But Spammy can’t shake this feeling of being watched&#8230;
     \n\n
     After a few more blocks, the fear overpowers him. He takes shelter behind some rubbish bins, and peers out into the street. For a moment he feels a bit silly. But indeed someone has been following him. A dark lumpy mass is skulking through the streets along his former path.
     \n\n
-    It’s Ed Amame from the fish market. “My Boss?!? What’s he doing here?” Spammy snorts to himself. “Is he looking for me because I left work early? Or... is he part of The Order?” Both options seem to lead towards trouble.
+    It’s Ed Amame from the fish market. “My Boss?!? What’s he doing here?” Spammy snorts to himself. “Is he looking for me because I left work early? Or&#8230; is he part of The Order?” Both options seem to lead towards trouble.
     </string>
 
     <string name="title_spoilsOfWar">Enjoy the Spoils of War</string>
@@ -185,23 +185,23 @@
     \n\n
     Sue and the crew are going to will train Spammy in the dark side of being Spamurai. And together with your new found fiends, you’ll spoil the citizens of JaPanty in order to save them.
     \n\n
-    In this storyline we’ll get leaner, meaner, and a little bit greener. Because revenge doesn’t have to be... a dish best served cold.
+    In this storyline we’ll get leaner, meaner, and a little bit greener. Because revenge doesn’t have to be&#8230; a dish best served cold.
     \n\n
     Kampai!
     </string>
 
-    <string name="title_nopeRightOut">'Nope' Right Out of There</string>
+    <string name="title_nopeRightOut">\'Nope\' Right Out of There</string>
     <string name="text_nopeRightOut">With Sue leading a few paces ahead, it’s easy to peel off unnoticed. Spammy dips into the alleyway, and darts towards the next street over. “What a piece of work.” he concludes. Slightly comforted by the idea that he’s not the lowest member of the food chain.
     \n\n
-    Quickly he traces his way back through streets. Knowing that his former companion will soon come looking for him. As soon as the path begin to look familiar, Spammy moves a few streets over— to obscure his trail. Everything seems clear. But Spammy can’t shake this feeling of being watched...
+    Quickly he traces his way back through streets. Knowing that his former companion will soon come looking for him. As soon as the path begin to look familiar, Spammy moves a few streets over— to obscure his trail. Everything seems clear. But Spammy can’t shake this feeling of being watched&#8230;
     \n\n
     After a few more blocks, the fear overpowers him. He takes shelter behind some rubbish bins, and peers out into the street. For a moment he feels a bit silly. But indeed someone has been following him. A dark lumpy mass is skulking through the streets along his former path.
     \n\n
-    It’s Ed Amame from the fish market. “My Boss?!? What’s he doing here?” Spammy snorts to himself. “Is he looking for me because I left work early? Or... is he part of The Order?” Both options seem to lead towards trouble.
+    It’s Ed Amame from the fish market. “My Boss?!? What’s he doing here?” Spammy snorts to himself. “Is he looking for me because I left work early? Or&#8230; is he part of The Order?” Both options seem to lead towards trouble.
     </string>
 
     <string name="title_sneakPastHim">Sneak Past Him</string>
-    <string name="text_sneakPastHim">Geez, somebody has trust issues...
+    <string name="text_sneakPastHim">Geez, somebody has trust issues&#8230;
     \n\n
     While you and Ed weren’t close, he was the nearest thing you had to a friend. And without confidence in other people, you live out the rest of your days as a social recluse.
     \n\n
@@ -213,9 +213,9 @@
     <string name="title_approachMrAmame">Approach Mr. Amame</string>
     <string name="text_approachMrAmame">Recognizing a friend, Spammy bursts from behind the trash cans. “Dear heavens!” croaks Ed Amame. His body tips sideways, and rocks him tenderly onto his back. The benefit of being so round is that falling just turns into rolling.
     \n\n
-    “You just about gave me a heart attack.” Ed declares, as he slowly turns his body towards Spammy. “But you were sneaking up on me!” interjects Spammy. “I was trying to find you... without being found myself.” explains Ed, as he begins to rock back and forth to right himself.
+    “You just about gave me a heart attack.” Ed declares, as he slowly turns his body towards Spammy. “But you were sneaking up on me!” interjects Spammy. “I was trying to find you&#8230; without being found myself.” explains Ed, as he begins to rock back and forth to right himself.
     \n\n
-    “Look, my boy.” Ed says, slowly standing up. “Dark forces are at work here... the Emperor is plotting against the people of JaPantry. Then Sue Shi intends on waging her own war that could sacrifice many lives. Each risks throwing JaPantry into total JaPanic.”
+    “Look, my boy.” Ed says, slowly standing up. “Dark forces are at work here&#8230; the Emperor is plotting against the people of JaPantry. Then Sue Shi intends on waging her own war that could sacrifice many lives. Each risks throwing JaPantry into total JaPanic.”
     \n\n
     “What our city needs is a hero. One that can bring these foods back to the land of milk and honey.” A glint begins to show in Ed Amame’s eyes. “With your permission, I would like to train you in the arts of the Spamurai.” Spammy is taken aback. To think that such a responsibility would fall onto his shoulders. But this decision could alter the course of the rest of his life.
     </string>
@@ -229,11 +229,11 @@
     </string>
 
     <string name="title_becomeAnEngineer">Become an Engineer</string>
-    <string name="text_becomeAnEngineer">Real problems fear... a clever engineer.
+    <string name="text_becomeAnEngineer">Real problems fear&#8230; a clever engineer.
     \n\n
     Plus it probably pays more than being a karate-meat-thing, err whatever. So Spammy
     \n\n
-    The end… Or an end. The game’s longer if you make better decisions.
+    The end&#8230; Or an end. The game’s longer if you make better decisions.
     </string>
 
 
